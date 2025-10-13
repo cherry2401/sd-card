@@ -1,0 +1,4114 @@
+// Student ID Card Generator - Optimized Version
+document.addEventListener('DOMContentLoaded', () => {
+  const _0xec14d2 = [
+      'さとう',
+      'すずき',
+      'たかはし',
+      'たなか',
+      'わたなべ',
+      'いとう',
+      'やまもと',
+      'なかむら',
+      'こばやし',
+      'かとう',
+      'よしだ',
+      'やまだ',
+      'さいとう',
+      'まつもと',
+      'いのうえ',
+      'きむら',
+      'はやし',
+      'しみず',
+      'やまぐち',
+      'もり',
+      'いけだ',
+      'はしもと',
+      'あべ',
+      'いしい',
+      'やまざき',
+      'むらかみ',
+      'えんどう',
+      'ふじた',
+      'ふくだ',
+      'にしむら',
+      'おおた',
+      'みうら',
+      'おかだ',
+      'なかじま',
+      'まえだ',
+      'ごとう',
+      'はせがわ',
+      'こんどう',
+      'いしだ',
+      'おがわ',
+      'おかもと',
+      'まつだ',
+      'はらだ',
+      'たかぎ',
+      'たむら',
+    ],
+    _0x4885f5 = [
+      'はると',
+      'ゆうと',
+      'そうた',
+      'ゆき',
+      'かいと',
+      'さくら',
+      'ゆい',
+      'ひな',
+      'あかり',
+      'めい',
+      'りん',
+      'ゆな',
+      'みお',
+      'れん',
+      'そうすけ',
+      'ひろ',
+      'なお',
+      'けん',
+      'まこと',
+      'しん',
+      'あい',
+      'みき',
+      'ゆう',
+      'たく',
+      'りお',
+      'けい',
+      'ゆうき',
+      'しゅん',
+      'ゆうた',
+      'みさ',
+      'ゆか',
+      'とも',
+      'あや',
+      'りさ',
+      'けいこ',
+    ],
+    _0x394bcc = [
+      '김',
+      '이',
+      '박',
+      '최',
+      '정',
+      '강',
+      '조',
+      '윤',
+      '장',
+      '임',
+      '오',
+      '한',
+      '신',
+      '서',
+      '권',
+      '황',
+      '안',
+      '송',
+      '류',
+      '홍',
+      '전',
+      '고',
+      '문',
+      '양',
+      '손',
+      '배',
+      '백',
+      '허',
+      '유',
+      '남',
+      '심',
+      '노',
+      '하',
+      '곽',
+      '성',
+      '차',
+      '주',
+      '우',
+      '구',
+      '신',
+      '임',
+      '민',
+      '진',
+      '지',
+      '엄',
+      '원',
+      '채',
+      '천',
+      '방',
+      '공',
+    ],
+    _0x102059 = [
+      '지민',
+      '서연',
+      '민준',
+      '서준',
+      '예준',
+      '지우',
+      '수빈',
+      '하준',
+      '윤서',
+      '지훈',
+      '현우',
+      '유진',
+      '은우',
+      '수연',
+      '예린',
+      '시우',
+      '서윤',
+      '하은',
+      '민서',
+      '도윤',
+      '지아',
+      '다은',
+      '준서',
+      '예은',
+      '지안',
+      '서진',
+      '민재',
+      '지현',
+      '수민',
+      '하린',
+      '윤호',
+      '지호',
+      '서하',
+      '민지',
+      '예지',
+      '지유',
+      '서우',
+      '하율',
+      '민혁',
+      '지성',
+      '수아',
+      '하진',
+      '윤아',
+      '지수',
+      '서영',
+      '민성',
+      '예원',
+      '지환',
+      '서은',
+      '하영',
+      '민호',
+    ],
+    _0x304137 = [
+      'Smith',
+      'Brown',
+      'Jones',
+      'Miller',
+      'Davis',
+      'Moore',
+      'Lee',
+      'White',
+      'Clark',
+      'Young',
+      'Allen',
+      'King',
+      'Scott',
+      'Hill',
+      'Green',
+      'Hall',
+      'Carter',
+      'Wright',
+      'AdAMS',
+      'Ward',
+      'Price',
+      'Cox',
+      'Reed',
+      'Cook',
+      'Bell',
+      'Gray',
+      'Ross',
+      'Long',
+      'Wood',
+      'Kelly',
+      'Fox',
+      'Stone',
+      'Grant',
+      'West',
+      'Cole',
+      'Ray',
+      'Page',
+      'Day',
+      'Lane',
+      'Dean',
+      'Blake',
+      'Miles',
+      'Shaw',
+      'Ford',
+      'Pope',
+      'Love',
+      'May',
+      'Rice',
+      'Neal',
+    ],
+    _0x2870e9 = [
+      'James',
+      'Mary',
+      'John',
+      'Linda',
+      'David',
+      'Susan',
+      'Mark',
+      'Paul',
+      'Emily',
+      'Anna',
+      'Ryan',
+      'Jack',
+      'Emma',
+      'Luke',
+      'Amy',
+      'Eric',
+      'Grace',
+      'Mia',
+      'Ella',
+      'Ben',
+      'Alex',
+      'Zoe',
+      'Max',
+      'Sam',
+      'Kate',
+      'Leo',
+      'Owen',
+      'Lily',
+      'Jake',
+      'Noah',
+      'Ruby',
+      'Eli',
+      'Tina',
+      'Kyle',
+      'Sara',
+      'Adam',
+      'Evan',
+      'Jill',
+      'Nina',
+      'Sean',
+      'Beth',
+      'Joel',
+      'Tara',
+      'Dean',
+      'Ruth',
+      'Gina',
+      'Cody',
+      'Drew',
+      'Ivy',
+    ],
+    _0x142513 = [
+      'Nguyễn',
+      'Trần',
+      'Lê',
+      'Phạm',
+      'Hoàng',
+      'Huỳnh',
+      'Phan',
+      'Vũ',
+      'Võ',
+      'Đặng',
+      'Bùi',
+      'Đỗ',
+      'Hồ',
+      'Ngô',
+      'Dương',
+      'Lý',
+      'Mai',
+      'Đinh',
+      'Trương',
+      'Đào',
+      'Lâm',
+      'Lưu',
+      'Hà',
+      'Tạ',
+      'Cao',
+      'Tô',
+      'Châu',
+      'La',
+      'Tăng',
+      'Kiều',
+      'Vương',
+      'Thái',
+      'Lương',
+      'Quan',
+      'Thạch',
+      'Trịnh',
+      'Văn',
+      'Viên',
+      'Mạc',
+      'Khương',
+      'Quách',
+      'Ông',
+      'Hứa',
+      'Từ',
+      'Doãn',
+      'Sơn',
+      'Đoàn',
+      'Đinh',
+    ],
+    _0x2219f0 = [
+      'Văn',
+      'Hữu',
+      'Đức',
+      'Minh',
+      'Hoàng',
+      'Quốc',
+      'Công',
+      'Bảo',
+      'Thanh',
+      'Xuân',
+      'Hải',
+      'Thiên',
+      'Khánh',
+      'Tuấn',
+      'Anh',
+      'Tường',
+      'Trí',
+      'Nhật',
+      'Quang',
+      'Thiện',
+      'Đăng',
+      'Phúc',
+      'An',
+      'Bình',
+      'Duy',
+      'Gia',
+      'Hồng',
+      'Khải',
+      'Lâm',
+      'Mạnh',
+      'Ngọc',
+      'Phương',
+      'Sơn',
+      'Tân',
+      'Thành',
+      'Tiến',
+      'Trung',
+      'Việt',
+    ],
+    _0x27d297 = [
+      'Thị',
+      'Như',
+      'Ngọc',
+      'Kim',
+      'Phương',
+      'Thu',
+      'Hạ',
+      'Đông',
+      'Thanh',
+      'Mai',
+      'Lan',
+      'Hương',
+      'Mỹ',
+      'Diệu',
+      'Thúy',
+      'Gia',
+      'An',
+      'Bình',
+      'Hồng',
+      'Khánh',
+      'Linh',
+      'Tú',
+      'Yến',
+      'Ánh',
+      'Bích',
+      'Cẩm',
+      'Hà',
+      'Huyền',
+      'Thiên',
+      'Trang',
+    ],
+    _0x42d38f = [
+      'Tuấn',
+      'Hùng',
+      'Quang',
+      'Dũng',
+      'Hải',
+      'Long',
+      'Nam',
+      'Trung',
+      'Bảo',
+      'Khoa',
+      'Huy',
+      'Hiếu',
+      'Thành',
+      'Khánh',
+      'Duy',
+      'Hoài',
+      'Khang',
+      'Kỳ',
+      'Tài',
+      'Đức',
+      'Minh',
+      'Tâm',
+      'Phong',
+      'Sơn',
+      'Thắng',
+      'Việt',
+      'Cường',
+      'Đạt',
+      'Hưng',
+      'Kiên',
+      'Lâm',
+      'Phú',
+      'Tân',
+      'Thiện',
+      'Tiến',
+      'Vũ',
+      'An',
+      'Bình',
+    ]
+  const _0x5a5f89 = [
+    'Anh',
+    'Hương',
+    'Lan',
+    'Linh',
+    'Hà',
+    'Phương',
+    'Thanh',
+    'Trang',
+    'Hoa',
+    'Thu',
+    'Ngọc',
+    'Thảo',
+    'Tú',
+    'Thư',
+    'An',
+    'Yến',
+    'Mai',
+    'Chi',
+    'Giang',
+    'Nhung',
+    'Vy',
+    'My',
+    'Châu',
+    'Lam',
+    'Như',
+    'Đan',
+    'Kim',
+    'Huyền',
+    'Nhi',
+    'Oanh',
+    'Quỳnh',
+    'Tâm',
+    'Trinh',
+    'Uyên',
+    'Vân',
+    'Xuân',
+    'Duyên',
+    'Hạnh',
+    'Khánh',
+    'Nga',
+  ]
+  function _0x481a8d(_0x31b43e) {
+    const _0x269ada = String(_0x31b43e || '')
+      .toLowerCase()
+      .replace(/^@/, '')
+    if (_0x269ada.endsWith('.edu')) {
+      return 'us'
+    }
+    if (_0x269ada.endsWith('.vn')) {
+      return 'vietnam'
+    }
+    if (_0x269ada.endsWith('.ac.kr')) {
+      return 'korea'
+    }
+    if (_0x269ada.endsWith('.ac.jp')) {
+      return 'japan'
+    }
+    return 'other'
+  }
+  function _0x55ed4d(_0x4bfa2b) {
+    const _0x326a4e = (_0x4bfa2b || '') + ''
+    const _0x31c606 = /^[\p{Script=Latin}\p{Number}\s.'-]+$/u.test(_0x326a4e)
+    return _0x31c606 ? _0x326a4e.toUpperCase() : _0x326a4e
+  }
+  function _0x3abf9f(_0x253f1a) {
+    let _0x9b175f = (_0x5b83aa[_0x253f1a] && _0x5b83aa[_0x253f1a].domain) || ''
+    const _0x59114e = _0x481a8d(_0x9b175f)
+    let _0x20c185, _0x4582ab
+    if (_0x59114e === 'us') {
+      return (
+        (_0x20c185 = _0x2870e9[Math.floor(Math.random() * _0x2870e9.length)]),
+        (_0x4582ab = _0x304137[Math.floor(Math.random() * _0x304137.length)]),
+        _0x20c185 + ' ' + _0x4582ab
+      )
+    } else {
+      if (_0x59114e === 'vietnam') {
+        const _0x28182a = Math.random() > 0.5
+        return (
+          (_0x4582ab = _0x142513[Math.floor(Math.random() * _0x142513.length)]),
+          _0x28182a
+            ? ((m = _0x2219f0[Math.floor(Math.random() * _0x2219f0.length)]),
+              (_0x20c185 =
+                _0x42d38f[Math.floor(Math.random() * _0x42d38f.length)]))
+            : ((m = _0x27d297[Math.floor(Math.random() * _0x27d297.length)]),
+              (_0x20c185 =
+                _0x5a5f89[Math.floor(Math.random() * _0x5a5f89.length)])),
+          _0x4582ab + ' ' + m + ' ' + _0x20c185
+        )
+      } else {
+        if (_0x59114e === 'korea') {
+          return (
+            (_0x20c185 =
+              _0x102059[Math.floor(Math.random() * _0x102059.length)]),
+            (_0x4582ab =
+              _0x394bcc[Math.floor(Math.random() * _0x394bcc.length)]),
+            _0x4582ab + ' ' + _0x20c185
+          )
+        } else {
+          return _0x59114e === 'japan'
+            ? ((_0x20c185 =
+                _0x4885f5[Math.floor(Math.random() * _0x4885f5.length)]),
+              (_0x4582ab =
+                _0xec14d2[Math.floor(Math.random() * _0xec14d2.length)]),
+              _0x4582ab + ' ' + _0x20c185)
+            : ((_0x20c185 =
+                _0x2870e9[Math.floor(Math.random() * _0x2870e9.length)]),
+              (_0x4582ab =
+                _0x304137[Math.floor(Math.random() * _0x304137.length)]),
+              _0x20c185 + ' ' + _0x4582ab)
+        }
+      }
+    }
+  }
+  const _0x5b83aa = {
+      'University of Texas at Austin': {
+        logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/University_of_Texas_at_Austin_seal.svg/180px-University_of_Texas_at_Austin_seal.svg.png',
+        domain: '@utexas.edu',
+        address: 'Austin, Texas 78712, USA',
+      },
+      'Đại học Trà Vinh': {
+        logo: 'https://upload.wikimedia.org/wikipedia/vi/thumb/c/ce/Logo_Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Tr%C3%A0_Vinh.png/250px-Logo_Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Tr%C3%A0_Vinh.png',
+        domain: '@vt.edu.vn',
+        address: 'Phường 5, Thành phố Trà Vinh, Tỉnh Trà Vinh, Việt Nam',
+      },
+      'University of Southern California': {
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/University_of_Southern_California_%28USC%29_seal.svg/180px-University_of_Southern_California_%28USC%29_seal.svg.png',
+        domain: '@usc.edu',
+        address: 'Los Angeles, California 90089, USA',
+      },
+      'Đại học Bách Khoa Hà Nội': {
+        logo: 'https://upload.wikimedia.org/wikipedia/vi/thumb/e/ef/Logo_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_B%C3%A1ch_Khoa_H%C3%A0_N%E1%BB%99i.svg/120px-Logo_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_B%C3%A1ch_Khoa_H%C3%A0_N%E1%BB%99i.svg.png',
+        domain: '@hust.edu.vn',
+        address: 'Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội, Việt Nam',
+      },
+      'Đại học Quốc gia TP.HCM': {
+        logo: 'https://upload.wikimedia.org/wikipedia/vi/thumb/f/fb/VNUHCM_logo.svg/250px-VNUHCM_logo.svg.png',
+        domain: '@vnuhcm.edu.vn',
+        address: 'Linh Trung, Thủ Đức, TP.HCM, Việt Nam',
+      },
+      'Đại học Cần Thơ': {
+        logo: 'https://upload.wikimedia.org/wikipedia/vi/thumb/6/6c/Logo_Dai_hoc_Can_Tho.svg/250px-Logo_Dai_hoc_Can_Tho.svg.png',
+        domain: '@ctu.edu.vn',
+        address:
+          'Khu II, đường 3/2, P. Xuân Khánh, Ninh Kiều, Cần Thơ, Việt Nam',
+      },
+      'Đại học Kinh tế Quốc dân': {
+        logo: 'https://upload.wikimedia.org/wikipedia/vi/thumb/3/30/Logo-NEU.PNG/250px-Logo-NEU.PNG',
+        domain: '@neu.edu.vn',
+        address: '207 Giải Phóng, Phương Mai, Đống Đa, Hà Nội, Việt Nam',
+      },
+      'Carnegie Mellon University': {
+        logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Carnegie_Mellon_University_seal.svg/250px-Carnegie_Mellon_University_seal.svg.png',
+        domain: '@cmu.edu',
+        address: 'Pittsburgh, Pennsylvania 15213, USA',
+      },
+      'Northwestern University': {
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Northwestern_University_seal.svg/180px-Northwestern_University_seal.svg.png',
+        domain: '@northwestern.edu',
+        address: 'Evanston, Illinois 60208, USA',
+      },
+      'Yonsei University': {
+        logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/9/95/YonseiUniversityEmblem.svg/150px-YonseiUniversityEmblem.svg.png',
+        domain: '@yonsei.ac.kr',
+        address: 'Seoul 03722, South Korea',
+      },
+      'Korea University': {
+        logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/f6/Korea_University_Global_Symbol.svg/140px-Korea_University_Global_Symbol.svg.png',
+        domain: '@korea.ac.kr',
+        address: 'Seoul 02841, South Korea',
+      },
+      'Seoul National University': {
+        logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/7/77/Seoul_national_university_emblem.svg/180px-Seoul_national_university_emblem.svg.png',
+        domain: '@snu.ac.kr',
+        address: 'Seoul 08826, South Korea',
+      },
+      'Hanyang University': {
+        logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/0/0a/Hanyang_University_new_UI.svg/170px-Hanyang_University_new_UI.svg.png',
+        domain: '@hanyang.ac.kr',
+        address: 'Seoul 04763, South Korea',
+      },
+      'Pusan National University': {
+        logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/50/Pusan_National_University_logo.svg/250px-Pusan_National_University_logo.svg.png',
+        domain: '@pusan.ac.kr',
+        address: 'Busan 46241, South Korea',
+      },
+      'University of Tokyo': {
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/archive/f/f8/20200320115642%21University_of_Tokyo_logo%2C_basic%2C_horizontal_%282004%E2%80%932024%29.svg/120px-University_of_Tokyo_logo%2C_basic%2C_horizontal_%282004%E2%80%932024%29.svg.png',
+        domain: '@u-tokyo.ac.jp',
+        address: 'Tokyo 113-8654, Japan',
+      },
+      'University of Osaka': {
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Osaka_University_logo.svg/250px-Osaka_University_logo.svg.png',
+        domain: '@osaka-u.ac.jp',
+        address: 'Osaka 565-0871, Japan',
+      },
+      'Hokkaido University': {
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Hokkaido_University_Logo-svg.png/250px-Hokkaido_University_Logo-svg.png',
+        domain: '@hokudai.ac.jp',
+        address: 'Sapporo 060-0808, Japan',
+      },
+      'Kyushu University': {
+        logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/fe/Kyushu_University.svg/150px-Kyushu_University.svg.png',
+        domain: '@kyushu-u.ac.jp',
+        address: 'Fukuoka 819-0395, Japan',
+      },
+    },
+    _0x3755a7 = Object.keys(_0x5b83aa),
+    _0x231f12 = [
+      'Computer Science',
+      'Software Engineering',
+      'Information Technology',
+      'Electrical Engineering',
+      'Mechanical Engineering',
+      'Civil Engineering',
+      'Chemical Engineering',
+      'Biomedical Engineering',
+      'Biology',
+      'Biochemistry',
+      'Chemistry',
+      'Physics',
+      'Mathematics',
+      'Statistics',
+      'Business Administration',
+      'Finance',
+      'Marketing',
+      'Accounting',
+      'Economics',
+      'International Relations',
+      'Political Science',
+      'Law',
+      'Medicine',
+      'Nursing',
+      'Pharmacy',
+      'Dentistry',
+      'Education',
+      'Early Childhood Education',
+      'English Literature',
+      'History',
+      'Sociology',
+      'Psychology',
+      'Philosophy',
+      'Environmental Science',
+      'Geology',
+      'Anthropology',
+      'Architecture',
+      'Graphic Design',
+      'Fine Arts',
+      'Music',
+      'Journalism',
+      'Linguistics',
+      'Hospitality Management',
+    ],
+    _0x2a10cc = document.getElementById('card-canvas'),
+    _0x4e3b02 = _0x2a10cc.getContext('2d')
+  let _0x21c38f = false
+  function _0x47a5b3() {
+    if (_0x21c38f) {
+      return
+    }
+    _0x21c38f = true
+    requestAnimationFrame(() => {
+      const _0x1a8f28 = window.devicePixelRatio || 1
+      _0x4e3b02.setTransform(1, 0, 0, 1, 0, 0)
+      _0x2a10cc.width = 1125 * _0x1a8f28
+      _0x2a10cc.height = 634 * _0x1a8f28
+      _0x2a10cc.style.width = '100%'
+      _0x2a10cc.style.height = 'auto'
+      _0x4e3b02.scale(_0x1a8f28, _0x1a8f28)
+      _0x272ccb()
+      _0x21c38f = false
+    })
+  }
+  _0x47a5b3()
+  let _0x42e05e,
+    _0xf53e62 = false
+  function _0x5dda3d() {
+    if (_0xf53e62) {
+      return
+    }
+    _0xf53e62 = true
+    clearTimeout(_0x42e05e)
+    _0x42e05e = setTimeout(() => {
+      _0x47a5b3()
+      _0xf53e62 = false
+    }, 150)
+  }
+  window.addEventListener('resize', _0x5dda3d, { passive: true })
+  window.addEventListener(
+    'orientationchange',
+    () => {
+      setTimeout(_0x47a5b3, 200)
+    },
+    { passive: true }
+  )
+  const _0x5b9ef5 = [
+    window.matchMedia('(max-width: 768px)'),
+    window.matchMedia('(max-width: 1024px)'),
+  ]
+  _0x5b9ef5.forEach((_0x4ee274) => {
+    _0x4ee274.addEventListener('change', _0x5dda3d)
+  })
+  let _0x2064d9 = {}
+  const _0x145f97 = new Image(),
+    _0x33ecaf = new Image()
+  _0x145f97.crossOrigin = 'anonymous'
+  _0x33ecaf.crossOrigin = 'anonymous'
+  let _0x4e833d = {}
+  const _0x54ede8 = {
+      preloadedImages: [],
+      maxCacheSize: 3,
+      isPreloading: false,
+      loadingPromises: new Map(),
+      backgroundIntervalId: null,
+      async preloadFaces() {
+        if (this.isPreloading) {
+          return
+        }
+        this.isPreloading = true
+        const _0x577e10 = []
+        for (
+          let _0x2c0e85 = 0;
+          _0x2c0e85 < Math.min(2, this.maxCacheSize);
+          _0x2c0e85++
+        ) {
+          _0x577e10.push(this.loadSingleFaceFast())
+        }
+        try {
+          const _0x344251 = await Promise.allSettled(_0x577e10),
+            _0x1cdae6 = _0x344251
+              .filter((_0x2f0741) => _0x2f0741.status === 'fulfilled')
+              .map((_0x208f01) => _0x208f01.value)
+          this.preloadedImages = _0x1cdae6
+          this.backgroundPreload()
+        } catch (_0x4ab3ed) {}
+        this.isPreloading = false
+      },
+      backgroundPreload() {
+        this.backgroundIntervalId && clearInterval(this.backgroundIntervalId)
+        this.backgroundIntervalId = setInterval(async () => {
+          if (this.preloadedImages.length < this.maxCacheSize) {
+            try {
+              const _0x2c291d = await this.loadSingleFaceFast()
+              this.preloadedImages.push(_0x2c291d)
+            } catch (_0x32ba1b) {}
+          }
+        }, 5000)
+      },
+      cleanup() {
+        this.backgroundIntervalId &&
+          (clearInterval(this.backgroundIntervalId),
+          (this.backgroundIntervalId = null))
+      },
+      async loadSingleFaceFast() {
+        return new Promise((_0x539435, _0x506a5d) => {
+          const _0x47cdd8 = setTimeout(() => {
+            _0x506a5d(new Error('Timeout loading face'))
+          }, 4000)
+          const _0x381366 = [
+            () => {
+              const _0x581ccf = Date.now() + Math.random()
+              return (
+                'https://face.studentidcard.me/api/proxy?v=' +
+                _0x581ccf +
+                '&fast=1'
+              )
+            },
+            () =>
+              'https://face.studentidcard.me/api/proxy?cache=' +
+              Math.floor(Date.now() / 1000),
+            () => 'https://face.studentidcard.me/api/proxy',
+          ]
+          let _0x62ef80 = 0
+          function _0x844bbe() {
+            if (_0x62ef80 >= _0x381366.length) {
+              clearTimeout(_0x47cdd8)
+              _0x506a5d(new Error('All approaches failed'))
+              return
+            }
+            const _0x48eee8 = _0x381366[_0x62ef80](),
+              _0x326123 = new Image(),
+              _0x54be1d = setTimeout(() => {
+                _0x62ef80++
+                _0x844bbe()
+              }, 1500)
+            _0x326123.onload = function () {
+              clearTimeout(_0x47cdd8)
+              clearTimeout(_0x54be1d)
+              _0x539435(_0x326123.src)
+            }
+            _0x326123.onerror = function () {
+              clearTimeout(_0x54be1d)
+              _0x62ef80++
+              setTimeout(_0x844bbe, 100)
+            }
+            _0x326123.crossOrigin = 'anonymous'
+            _0x326123.src = _0x48eee8
+          }
+          _0x844bbe()
+        })
+      },
+      async loadSingleFace() {
+        return this.loadSingleFaceFast()
+      },
+      getInstantFace() {
+        if (this.preloadedImages.length > 0) {
+          const _0x301dd4 = this.preloadedImages.shift()
+          return (
+            Promise.all([
+              this.loadSingleFaceFast().catch(() => null),
+              this.loadSingleFaceFast().catch(() => null),
+            ]).then((_0x359f43) => {
+              _0x359f43
+                .filter((_0x3a312c) => _0x3a312c)
+                .forEach((_0x5f4277) => this.preloadedImages.push(_0x5f4277))
+            }),
+            Promise.resolve(_0x301dd4)
+          )
+        } else {
+          return this.loadSingleFaceFast()
+        }
+      },
+    },
+    _0x41d157 = {
+      studentPhoto: document.getElementById('student-photo-input'),
+      studentName: document.getElementById('student-name'),
+      schoolName: document.getElementById('school-name'),
+      studentId: document.getElementById('student-id'),
+      dob: document.getElementById('dob'),
+      course: document.getElementById('course'),
+      validTo: document.getElementById('valid-to'),
+      customSchoolName: document.getElementById('custom-school-name'),
+      customLogoUrl: document.getElementById('custom-logo-url'),
+    },
+    _0x2fc912 = {
+      download: document.getElementById('download-btn'),
+      randomName: document.getElementById('random-name-btn'),
+      randomId: document.getElementById('random-id-btn'),
+      randomDob: document.getElementById('random-dob-btn'),
+      randomValidTo: document.getElementById('random-validto-btn'),
+      randomColor: document.getElementById('random-color-btn'),
+      copyEmail: document.getElementById('copy-email-btn'),
+      copySchool: document.getElementById('copy-school-btn'),
+      randomAll: document.getElementById('random-all-btn'),
+      randomFaces: document.getElementById('random-faces-btn'),
+    },
+    _0xe7ba7 = document.getElementById('custom-school-fields')
+  function _0x46e1e4() {
+    const _0xb3a4cb = [
+        {
+          top: '#1e3a8a',
+          bottom: '#3b82f6',
+        },
+        {
+          top: '#7c2d12',
+          bottom: '#dc2626',
+        },
+        {
+          top: '#166534',
+          bottom: '#16a34a',
+        },
+        {
+          top: '#7c2d12',
+          bottom: '#f59e0b',
+        },
+        {
+          top: '#6b21a8',
+          bottom: '#a855f7',
+        },
+        {
+          top: '#0f172a',
+          bottom: '#475569',
+        },
+        {
+          top: '#1e40af',
+          bottom: '#06b6d4',
+        },
+        {
+          top: '#991b1b',
+          bottom: '#fbbf24',
+        },
+        {
+          top: '#fbbf24',
+          bottom: '#fde047',
+        },
+        {
+          top: '#fecaca',
+          bottom: '#fed7d7',
+        },
+        {
+          top: '#bfdbfe',
+          bottom: '#dbeafe',
+        },
+        {
+          top: '#0d324d',
+          bottom: '#7f5a83',
+        },
+        {
+          top: '#1a2980',
+          bottom: '#26d0ce',
+        },
+        {
+          top: '#ff512f',
+          bottom: '#dd2476',
+        },
+        {
+          top: '#43cea2',
+          bottom: '#185a9d',
+        },
+        {
+          top: '#f7971e',
+          bottom: '#ffd200',
+        },
+        {
+          top: '#c33764',
+          bottom: '#1d2671',
+        },
+        {
+          top: '#fc5c7d',
+          bottom: '#6a82fb',
+        },
+        {
+          top: '#00c6ff',
+          bottom: '#0072ff',
+        },
+        {
+          top: '#f953c6',
+          bottom: '#b91d73',
+        },
+        {
+          top: '#ee9ca7',
+          bottom: '#ffdde1',
+        },
+        {
+          top: '#2193b0',
+          bottom: '#6dd5ed',
+        },
+        {
+          top: '#cc2b5e',
+          bottom: '#753a88',
+        },
+        {
+          top: '#42275a',
+          bottom: '#734b6d',
+        },
+        {
+          top: '#bdc3c7',
+          bottom: '#2c3e50',
+        },
+        {
+          top: '#de6262',
+          bottom: '#ffb88c',
+        },
+        {
+          top: '#06beb6',
+          bottom: '#48b1bf',
+        },
+        {
+          top: '#eb3349',
+          bottom: '#f45c43',
+        },
+        {
+          top: '#56ab2f',
+          bottom: '#a8e063',
+        },
+        {
+          top: '#614385',
+          bottom: '#516395',
+        },
+        {
+          top: '#eecda3',
+          bottom: '#ef629f',
+        },
+        {
+          top: '#02aab0',
+          bottom: '#00cdac',
+        },
+        {
+          top: '#d9afd9',
+          bottom: '#97d9e1',
+        },
+        {
+          top: '#a1c4fd',
+          bottom: '#c2e9fb',
+        },
+        {
+          top: '#667eea',
+          bottom: '#764ba2',
+        },
+        {
+          top: '#ffaf7b',
+          bottom: '#d76d77',
+        },
+        {
+          top: '#43e97b',
+          bottom: '#38f9d7',
+        },
+        {
+          top: '#fa709a',
+          bottom: '#fee140',
+        },
+        {
+          top: '#30cfd0',
+          bottom: '#330867',
+        },
+        {
+          top: '#5f2c82',
+          bottom: '#49a09d',
+        },
+        {
+          top: '#b2fefa',
+          bottom: '#0ed2f7',
+        },
+        {
+          top: '#c471f5',
+          bottom: '#fa71cd',
+        },
+        {
+          top: '#12c2e9',
+          bottom: '#c471ed',
+        },
+        {
+          top: '#f64f59',
+          bottom: '#c471ed',
+        },
+        {
+          top: '#89f7fe',
+          bottom: '#66a6ff',
+        },
+        {
+          top: '#f857a6',
+          bottom: '#ff5858',
+        },
+        {
+          top: '#a18cd1',
+          bottom: '#fbc2eb',
+        },
+        {
+          top: '#d299c2',
+          bottom: '#fef9d7',
+        },
+        {
+          top: '#f6d365',
+          bottom: '#fda085',
+        },
+        {
+          top: '#fdcbf1',
+          bottom: '#e6dee9',
+        },
+        {
+          top: '#a8edea',
+          bottom: '#fed6e3',
+        },
+      ].filter((_0x57c283) => {
+        const _0x2dd99a = [
+          '#fdfbfb',
+          '#ebedee',
+          '#fbc2eb',
+          '#a6c1ee',
+          '#ffecd2',
+          '#fcb69f',
+          '#ee9ca7',
+          '#ffdde1',
+          '#d9afd9',
+          '#97d9e1',
+          '#eecda3',
+          '#fef9d7',
+          '#f6d365',
+          '#fda085',
+          '#fdcbf1',
+          '#e6dee9',
+          '#a8edea',
+          '#fed6e3',
+          '#a1c4fd',
+          '#c2e9fb',
+          '#fbc2eb',
+          '#a18cd1',
+          '#ff9a9e',
+          '#fad0c4',
+          '#ffdde1',
+          '#ee9ca7',
+          '#bdc3c7',
+          '#e5e7eb',
+          '#f3f4f6',
+          '#fecaca',
+          '#fed7d7',
+          '#bfdbfe',
+          '#dbeafe',
+        ]
+        return (
+          !_0x2dd99a.includes(_0x57c283.top.toLowerCase()) &&
+          !_0x2dd99a.includes(_0x57c283.bottom.toLowerCase())
+        )
+      }),
+      _0x47c393 = _0xb3a4cb[Math.floor(Math.random() * _0xb3a4cb.length)]
+    return {
+      top: _0x47c393.top,
+      bottom: _0x47c393.bottom,
+      texture: _0x47c393.top + '20',
+    }
+  }
+  function _0x413bcb(_0x132940) {
+    const _0xee15c1 = _0x132940.replace('#', ''),
+      _0xb959e3 = parseInt(_0xee15c1.substr(0, 2), 16),
+      _0x4e8f1d = parseInt(_0xee15c1.substr(2, 2), 16),
+      _0x1aef2a = parseInt(_0xee15c1.substr(4, 2), 16),
+      _0x5e0ff0 =
+        (0.299 * _0xb959e3 + 0.587 * _0x4e8f1d + 0.114 * _0x1aef2a) / 255
+    return _0x5e0ff0 > 0.5
+      ? {
+          primary: '#000',
+          stroke: 'rgba(255,255,255,.3)',
+          strokeWidth: 0.8,
+        }
+      : {
+          primary: '#FFF',
+          stroke: 'rgba(0,0,0,.3)',
+          strokeWidth: 1.2,
+        }
+  }
+  function _0x3b029b(_0x53706c, _0xd8b7dd) {
+    const _0x339fce = (_0x20117d) => {
+        const _0x3c5c87 = _0x20117d.replace('#', '')
+        return {
+          r: parseInt(_0x3c5c87.substr(0, 2), 16),
+          g: parseInt(_0x3c5c87.substr(2, 2), 16),
+          b: parseInt(_0x3c5c87.substr(4, 2), 16),
+        }
+      },
+      _0x2dfaa6 = _0x339fce(_0x53706c),
+      _0x2e2d81 = _0x339fce(_0xd8b7dd),
+      _0x4fef0e = Math.round((_0x2dfaa6.r + _0x2e2d81.r) / 2),
+      _0x5cf67c = Math.round((_0x2dfaa6.g + _0x2e2d81.g) / 2),
+      _0x4779c0 = Math.round((_0x2dfaa6.b + _0x2e2d81.b) / 2)
+    const _0x1eb667 =
+      '#' +
+      _0x4fef0e.toString(16).padStart(2, '0') +
+      _0x5cf67c.toString(16).padStart(2, '0') +
+      _0x4779c0.toString(16).padStart(2, '0')
+    return _0x413bcb(_0x1eb667)
+  }
+  function _0x8c156e(
+    _0xe8200,
+    _0x22dbde,
+    _0x5c0d48,
+    _0x463557,
+    _0x5fbd4a,
+    _0x42dd5a
+  ) {
+    _0xe8200.beginPath()
+    _0xe8200.moveTo(_0x22dbde + _0x42dd5a, _0x5c0d48)
+    _0xe8200.lineTo(_0x22dbde + _0x463557 - _0x42dd5a, _0x5c0d48)
+    _0xe8200.quadraticCurveTo(
+      _0x22dbde + _0x463557,
+      _0x5c0d48,
+      _0x22dbde + _0x463557,
+      _0x5c0d48 + _0x42dd5a
+    )
+    _0xe8200.lineTo(_0x22dbde + _0x463557, _0x5c0d48 + _0x5fbd4a - _0x42dd5a)
+    _0xe8200.quadraticCurveTo(
+      _0x22dbde + _0x463557,
+      _0x5c0d48 + _0x5fbd4a,
+      _0x22dbde + _0x463557 - _0x42dd5a,
+      _0x5c0d48 + _0x5fbd4a
+    )
+    _0xe8200.lineTo(_0x22dbde + _0x42dd5a, _0x5c0d48 + _0x5fbd4a)
+    _0xe8200.quadraticCurveTo(
+      _0x22dbde,
+      _0x5c0d48 + _0x5fbd4a,
+      _0x22dbde,
+      _0x5c0d48 + _0x5fbd4a - _0x42dd5a
+    )
+    _0xe8200.lineTo(_0x22dbde, _0x5c0d48 + _0x42dd5a)
+    _0xe8200.quadraticCurveTo(
+      _0x22dbde,
+      _0x5c0d48,
+      _0x22dbde + _0x42dd5a,
+      _0x5c0d48
+    )
+    _0xe8200.closePath()
+  }
+  function _0x53d420() {
+    _0x4e3b02.save()
+    _0x4e3b02.globalAlpha = 0.03
+    _0x4e3b02.strokeStyle = '#4A90E2'
+    _0x4e3b02.lineWidth = 1
+    for (let _0x10227a = 0; _0x10227a < 1125; _0x10227a += 15) {
+      for (let _0x3de432 = 0; _0x3de432 < 634; _0x3de432 += 15) {
+        _0x4e3b02.beginPath()
+        _0x4e3b02.arc(_0x10227a, _0x3de432, 2, 0, Math.PI * 2)
+        _0x4e3b02.stroke()
+      }
+    }
+    _0x4e3b02.lineWidth = 0.5
+    for (let _0x90fe49 = -634; _0x90fe49 < 1125; _0x90fe49 += 8) {
+      _0x4e3b02.beginPath()
+      _0x4e3b02.moveTo(_0x90fe49, 0)
+      _0x4e3b02.lineTo(_0x90fe49 + 634, 634)
+      _0x4e3b02.stroke()
+    }
+    _0x4e3b02.restore()
+  }
+  function _0x3446ce(_0x4a5394, _0x326bec, _0x53c743) {
+    _0x4e3b02.save()
+    _0x4e3b02.font = "113px 'Quick Signature Personal Use'"
+    _0x4e3b02.fillStyle = '#1a365d'
+    let _0x14cbae = _0x326bec
+    _0x4a5394.split('').forEach((_0x2bea63, _0x9b2886) => {
+      const _0x49be51 = (Math.random() - 0.5) * 0.05
+      const _0x564e27 = Math.sin(_0x9b2886 * 0.5) * 2
+      _0x4e3b02.save()
+      _0x4e3b02.translate(_0x14cbae, _0x53c743 + _0x564e27)
+      _0x4e3b02.rotate(_0x49be51)
+      _0x4e3b02.fillText(_0x2bea63, 0, 0)
+      _0x4e3b02.restore()
+      _0x14cbae += _0x4e3b02.measureText(_0x2bea63).width
+    })
+    _0x4e3b02.restore()
+  }
+  function _0x15930a() {
+    _0x4e3b02.save()
+    _0x4e3b02.globalAlpha = 0.04
+    const _0x4408aa = 338.5
+    const _0x4beb84 = 161
+    if (_0x145f97.complete && _0x145f97.naturalWidth !== 0) {
+      _0x4e3b02.drawImage(_0x145f97, _0x4408aa, _0x4beb84, 448, 448)
+    }
+    _0x4e3b02.restore()
+  }
+  function _0x2db35d() {
+    return new Promise(async (_0x3b0cfa, _0x31eb95) => {
+      try {
+        const _0x3f7627 = await _0x54ede8.getInstantFace()
+        _0x33ecaf.onload = function () {
+          !_0x21c38f
+            ? requestAnimationFrame(() => {
+                _0x272ccb()
+                _0x3b0cfa(_0x3f7627)
+              })
+            : _0x3b0cfa(_0x3f7627)
+        }
+        _0x33ecaf.onerror = function () {
+          _0x54ede8
+            .loadSingleFaceFast()
+            .then((_0x360562) => {
+              _0x33ecaf.src = _0x360562
+            })
+            .catch(() => {
+              _0x33ecaf.src =
+                'https://placehold.co/400x400/E2E8F0/A0AEC0?text=Failed'
+              _0x31eb95(new Error('Failed to load random face'))
+            })
+        }
+        _0x33ecaf.src = _0x3f7627
+      } catch (_0x191816) {
+        try {
+          const _0x5ce9fa = await _0x54ede8.loadSingleFaceFast()
+          _0x33ecaf.onload = () => {
+            _0x3b0cfa(_0x5ce9fa)
+          }
+          _0x33ecaf.src = _0x5ce9fa
+        } catch (_0x58872d) {
+          _0x33ecaf.src =
+            'https://placehold.co/400x400/E2E8F0/A0AEC0?text=Error'
+          _0x31eb95(_0x58872d)
+        }
+      }
+    })
+  }
+  function _0x38377f(_0x468d7b = 5) {
+    return new Promise(async (_0x2e73a9, _0x820046) => {
+      const _0xb4b9c4 = new Set(),
+        _0x40bdf3 = [],
+        _0x51bd9c = _0x468d7b * 4
+      let _0x2f2c6d = 0
+      while (_0x40bdf3.length < _0x468d7b && _0x2f2c6d < _0x51bd9c) {
+        _0x2f2c6d++
+        try {
+          const _0x12d44c =
+              'face_' +
+              Date.now() +
+              '_' +
+              _0x2f2c6d +
+              '_' +
+              Math.random().toString(36).slice(2, 8),
+            _0x1c45b9 = await _0x29562d(_0x12d44c),
+            _0x1b451c = await _0x29d944(_0x1c45b9)
+          !_0xb4b9c4.has(_0x1b451c)
+            ? (_0xb4b9c4.add(_0x1b451c), _0x40bdf3.push(_0x1c45b9))
+            : URL.revokeObjectURL(_0x1c45b9)
+        } catch (_0x37e565) {}
+        if (_0x40bdf3.length < _0x468d7b && _0x2f2c6d < _0x51bd9c) {
+          const _0x42d864 = Math.min(500 + _0x2f2c6d * 100, 2000)
+          await new Promise((_0x2e45b6) => setTimeout(_0x2e45b6, _0x42d864))
+        }
+      }
+      _0x40bdf3.length > 0
+        ? _0x2e73a9(_0x40bdf3)
+        : _0x820046(
+            new Error(
+              'Failed to load any unique faces after ' + _0x2f2c6d + ' attempts'
+            )
+          )
+    })
+  }
+  async function _0x29d944(_0x12fbbb) {
+    return new Promise((_0x47e9c0) => {
+      const _0x5d2acc = new Image()
+      _0x5d2acc.crossOrigin = 'anonymous'
+      _0x5d2acc.onload = () => {
+        const _0x4a9652 = document.createElement('canvas')
+        const _0x567101 = _0x4a9652.getContext('2d')
+        _0x4a9652.width = 32
+        _0x4a9652.height = 32
+        _0x567101.drawImage(_0x5d2acc, 0, 0, 32, 32)
+        try {
+          const _0x3f66b2 = _0x567101.getImageData(0, 0, 32, 32),
+            _0x2269e1 = _0x3f66b2.data
+          let _0x442e2d = 0
+          for (
+            let _0x2fb6a2 = 0;
+            _0x2fb6a2 < _0x2269e1.length;
+            _0x2fb6a2 += 4
+          ) {
+            const _0x2be675 =
+              (_0x2269e1[_0x2fb6a2] << 16) |
+              (_0x2269e1[_0x2fb6a2 + 1] << 8) |
+              _0x2269e1[_0x2fb6a2 + 2]
+            _0x442e2d = ((_0x442e2d << 5) - _0x442e2d + _0x2be675) & 4294967295
+          }
+          _0x47e9c0(_0x442e2d.toString(36))
+        } catch (_0x23db38) {
+          _0x47e9c0(_0x12fbbb.slice(-20))
+        }
+      }
+      _0x5d2acc.onerror = () => {
+        _0x47e9c0(_0x12fbbb.slice(-20))
+      }
+      _0x5d2acc.src = _0x12fbbb
+    })
+  }
+  async function _0x29562d(_0x7f45e3 = null) {
+    return new Promise(async (_0x17b449, _0x5ae63b) => {
+      const _0xd6bcea = setTimeout(() => {
+          _0x5ae63b(new Error('Timeout loading face blob'))
+        }, 8000),
+        _0x14d362 = _0x7f45e3 || Date.now() + Math.random() * 10000
+      const _0x311af6 = Date.now(),
+        _0x3ff414 = Math.floor(Math.random() * 100000),
+        _0x1093cc = [
+          () =>
+            'https://face.studentidcard.me/api/proxy?v=' +
+            _0x14d362 +
+            '&t=' +
+            _0x311af6 +
+            '&seed=' +
+            _0x3ff414 +
+            '&fast=1',
+          () =>
+            'https://face.studentidcard.me/api/proxy?cache=' +
+            Math.floor(_0x311af6 / 1000) +
+            '&unique=' +
+            _0x14d362,
+          () =>
+            'https://face.studentidcard.me/api/proxy?rand=' +
+            _0x3ff414 +
+            '&ts=' +
+            _0x311af6,
+          () => 'https://face.studentidcard.me/api/proxy?id=' + _0x14d362,
+        ]
+      let _0x44080b = 0
+      async function _0x29d04c() {
+        if (_0x44080b >= _0x1093cc.length) {
+          clearTimeout(_0xd6bcea)
+          _0x5ae63b(new Error('All approaches failed for blob'))
+          return
+        }
+        const _0x2fb79f = _0x1093cc[_0x44080b]()
+        try {
+          const _0x1e4a04 = await fetch(_0x2fb79f)
+          if (!_0x1e4a04.ok) {
+            throw new Error('Network response was not ok')
+          }
+          const _0x4e6f5c = await _0x1e4a04.blob(),
+            _0x5e9e6b = URL.createObjectURL(_0x4e6f5c),
+            _0x4b7541 = new Image()
+          _0x4b7541.onload = () => {
+            clearTimeout(_0xd6bcea)
+            _0x17b449(_0x5e9e6b)
+          }
+          _0x4b7541.onerror = () => {
+            URL.revokeObjectURL(_0x5e9e6b)
+            _0x44080b++
+            setTimeout(_0x29d04c, 100)
+          }
+          _0x4b7541.src = _0x5e9e6b
+        } catch (_0x303bc7) {
+          _0x44080b++
+          setTimeout(_0x29d04c, 100)
+        }
+      }
+      _0x29d04c()
+    })
+  }
+  function _0x991df(_0x37c849) {
+    const _0x28863f = document.getElementById('face-selection-grid'),
+      _0x10aa28 = _0x28863f.querySelectorAll('.face-option')
+    window.currentFaceUrls = [..._0x37c849]
+    _0x10aa28.forEach((_0x25753a, _0x29dc3c) => {
+      if (_0x29dc3c < _0x37c849.length) {
+        const _0x490cd7 = _0x25753a.querySelector('img')
+        _0x490cd7.src = _0x37c849[_0x29dc3c]
+        _0x490cd7.onerror = () => {
+          _0x490cd7.src = 'https://placehold.co/64x64/E2E8F0/A0AEC0?text=Error'
+        }
+        _0x25753a.setAttribute('data-face-url', _0x37c849[_0x29dc3c])
+        _0x25753a.setAttribute('data-face-index', _0x29dc3c.toString())
+      }
+    })
+    _0x28863f.classList.remove('hidden')
+    _0x10aa28.forEach((_0x13db3b, _0x316835) => {
+      _0x13db3b.onclick = () => {
+        _0x10aa28.forEach((_0x310ba5) =>
+          _0x310ba5.classList.remove('border-blue-500', 'bg-blue-50')
+        )
+        _0x13db3b.classList.add('border-blue-500', 'bg-blue-50')
+        const _0x2d91a2 = parseInt(_0x13db3b.getAttribute('data-face-index')),
+          _0x1644fd =
+            window.currentFaceUrls[_0x2d91a2] ||
+            _0x13db3b.getAttribute('data-face-url')
+        _0x1644fd &&
+          ((_0x33ecaf.onload = null),
+          (_0x33ecaf.onerror = null),
+          (_0x33ecaf.src = ''),
+          setTimeout(() => {
+            const _0x4154f3 = new Image()
+            _0x4154f3.crossOrigin = 'anonymous'
+            _0x4154f3.onload = function () {
+              _0x13db3b.classList.contains('border-blue-500') &&
+                ((_0x33ecaf.onload = null),
+                (_0x33ecaf.onerror = null),
+                (_0x33ecaf.src = this.src),
+                requestAnimationFrame(() => {
+                  _0x272ccb()
+                  _0x83e27d()
+                }))
+            }
+            _0x4154f3.onerror = function () {
+              console.error('\u274C Failed to load selected face:', _0x1644fd)
+              _0x33ecaf.src =
+                'https://placehold.co/400x400/E2E8F0/A0AEC0?text=Face+Error'
+              _0x272ccb()
+            }
+            _0x4154f3.src = _0x1644fd
+          }, 50))
+      }
+    })
+    _0x37c849.length > 0 &&
+      ((_0x33ecaf.onload = () => {
+        _0x272ccb()
+      }),
+      (_0x33ecaf.onerror = () => {}),
+      (_0x33ecaf.src = _0x37c849[0]),
+      setTimeout(() => {
+        _0x10aa28[0].classList.add('border-blue-500', 'bg-blue-50')
+      }, 50))
+  }
+  function _0x83e27d() {
+    const _0x8752e0 = document.createElement('div')
+    _0x8752e0.style.cssText =
+      '\n            position: fixed;\n            top: 20px;\n            right: 20px;\n            background: linear-gradient(135deg, #10b981 0%, #059669 100%);\n            color: white;\n            padding: 12px 20px;\n            border-radius: 8px;\n            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);\n            z-index: 10000;\n            font-family: Inter, sans-serif;\n            font-weight: 600;\n            font-size: 14px;\n            animation: slideInRight 0.3s ease-out;\n        '
+    _0x8752e0.innerHTML = '\u2705 Bạn đã thay đổi Face'
+    document.body.appendChild(_0x8752e0)
+    setTimeout(() => {
+      _0x8752e0.style.animation = 'slideOutRight 0.3s ease-out'
+      setTimeout(() => document.body.removeChild(_0x8752e0), 300)
+    }, 1500)
+  }
+  function _0x272ccb() {
+    _0x4e3b02.clearRect(0, 0, 1125, 634)
+    _0x4e3b02.save()
+    _0x4e3b02.beginPath()
+    _0x4e3b02.moveTo(40, 0)
+    _0x4e3b02.lineTo(1085, 0)
+    _0x4e3b02.quadraticCurveTo(1125, 0, 1125, 40)
+    _0x4e3b02.lineTo(1125, 594)
+    _0x4e3b02.quadraticCurveTo(1125, 634, 1085, 634)
+    _0x4e3b02.lineTo(40, 634)
+    _0x4e3b02.quadraticCurveTo(0, 634, 0, 594)
+    _0x4e3b02.lineTo(0, 40)
+    _0x4e3b02.quadraticCurveTo(0, 0, 40, 0)
+    _0x4e3b02.closePath()
+    _0x4e3b02.clip()
+    _0x4e3b02.fillStyle = '#FEFEFE'
+    _0x4e3b02.fillRect(0, 0, 1125, 634)
+    _0x53d420()
+    const _0x3e3b07 = _0x4e3b02.createLinearGradient(0, 0, 1125, 85)
+    _0x3e3b07.addColorStop(0, _0x4e833d.top || '#6b21a8')
+    _0x3e3b07.addColorStop(1, _0x4e833d.bottom || '#a855f7')
+    _0x4e3b02.fillStyle = _0x3e3b07
+    _0x4e3b02.fillRect(0, 0, 1125, 170)
+    _0x4e3b02.save()
+    _0x4e3b02.globalAlpha = 0.12
+    _0x4e3b02.fillStyle = '#000'
+    _0x4e3b02.fillRect(0, 167, 1125, 3)
+    _0x4e3b02.globalAlpha = 0.25
+    _0x4e3b02.fillStyle = '#fff'
+    _0x4e3b02.fillRect(0, 0, 1125, 2)
+    _0x4e3b02.restore()
+    const _0x2d1cf7 = Math.round(85)
+    if (_0x145f97.complete && _0x145f97.naturalWidth !== 0) {
+      const _0x5c85b1 = _0x145f97.naturalWidth / _0x145f97.naturalHeight
+      let _0x3eb86d, _0x2e6c78
+      _0x5c85b1 > 1
+        ? ((_0x3eb86d = 126), (_0x2e6c78 = 126 / _0x5c85b1))
+        : ((_0x2e6c78 = 126), (_0x3eb86d = 126 * _0x5c85b1))
+      _0x4e3b02.save()
+      _0x4e3b02.fillStyle = 'rgba(255, 255, 255, 0.85)'
+      _0x4e3b02.beginPath()
+      _0x4e3b02.arc(
+        105,
+        _0x2d1cf7,
+        Math.max(_0x3eb86d, _0x2e6c78) / 2 + 15,
+        0,
+        Math.PI * 2
+      )
+      _0x4e3b02.fill()
+      _0x4e3b02.shadowColor = 'rgba(0, 0, 0, 0.3)'
+      _0x4e3b02.shadowBlur = 8
+      _0x4e3b02.shadowOffsetX = 2
+      _0x4e3b02.shadowOffsetY = 2
+      _0x4e3b02.drawImage(
+        _0x145f97,
+        105 - _0x3eb86d / 2,
+        _0x2d1cf7 - _0x2e6c78 / 2,
+        _0x3eb86d,
+        _0x2e6c78
+      )
+      _0x4e3b02.shadowColor = 'transparent'
+      _0x4e3b02.shadowBlur = 0
+      _0x4e3b02.shadowOffsetX = 0
+      _0x4e3b02.shadowOffsetY = 0
+      _0x4e3b02.globalCompositeOperation = 'source-over'
+      _0x4e3b02.strokeStyle = 'rgba(255, 255, 255, 0.4)'
+      _0x4e3b02.lineWidth = 1
+      _0x4e3b02.drawImage(
+        _0x145f97,
+        105 - _0x3eb86d / 2 - 0.5,
+        _0x2d1cf7 - _0x2e6c78 / 2 - 0.5,
+        _0x3eb86d + 1,
+        _0x2e6c78 + 1
+      )
+      _0x4e3b02.restore()
+    }
+    const _0x1d6ab1 = (_0x2064d9.schoolName || 'UNIVERSITY').toUpperCase()
+    _0x4e3b02.save()
+    _0x4e3b02.fillStyle = '#FFFFFF'
+    _0x4e3b02.strokeStyle = 'rgba(0,0,0,0.25)'
+    _0x4e3b02.textAlign = 'left'
+    _0x4e3b02.font = "700 36px 'Inter', 'Noto Sans KR', system-ui, sans-serif"
+    const _0x782ad9 = 210
+    _0x4e3b02.strokeText(_0x1d6ab1, _0x782ad9, _0x2d1cf7 - 6)
+    _0x4e3b02.fillText(_0x1d6ab1, _0x782ad9, _0x2d1cf7 - 6)
+    const _0x21abd1 =
+      _0x5b83aa[_0x2064d9.schoolName] && _0x5b83aa[_0x2064d9.schoolName].address
+        ? _0x5b83aa[_0x2064d9.schoolName].address
+        : 'University Address'
+    _0x4e3b02.font = "500 24px 'Inter', 'Noto Sans KR', system-ui, sans-serif"
+    _0x4e3b02.globalAlpha = 0.9
+    _0x4e3b02.strokeText(_0x21abd1, _0x782ad9, _0x2d1cf7 + 36)
+    _0x4e3b02.fillText(_0x21abd1, _0x782ad9, _0x2d1cf7 + 36)
+    _0x4e3b02.globalAlpha = 1
+    const _0x57e16c = {
+      US: 'STUDENT ID CARD',
+      VN: 'THẺ SINH VIÊN',
+      KR: '학생증',
+      JP: 'がくせいしょう',
+    }
+    let _0x1266b3 = 'US'
+    if (_0x2064d9.schoolName && _0x5b83aa[_0x2064d9.schoolName]) {
+      const _0x1dddb1 = _0x5b83aa[_0x2064d9.schoolName].domain || ''
+      if (_0x1dddb1.endsWith('.vn')) {
+        _0x1266b3 = 'VN'
+      } else {
+        if (_0x1dddb1.endsWith('.edu')) {
+          _0x1266b3 = 'US'
+        } else {
+          if (_0x1dddb1.endsWith('.ac.kr')) {
+            _0x1266b3 = 'KR'
+          } else {
+            if (_0x1dddb1.endsWith('.ac.jp')) {
+              _0x1266b3 = 'JP'
+            }
+          }
+        }
+      }
+    }
+    _0x4e3b02.save()
+    _0x4e3b02.globalAlpha = 0.95
+    _0x4e3b02.font = "600 21px 'Inter', 'Noto Sans KR', system-ui, sans-serif"
+    _0x4e3b02.textAlign = 'right'
+    const _0x246599 = 1085,
+      _0x552065 = 150
+    _0x4e3b02.fillText(
+      _0x57e16c[_0x1266b3] || _0x57e16c.US,
+      _0x246599,
+      _0x552065
+    )
+    _0x4e3b02.restore()
+    _0x4e3b02.restore()
+    const _0x8a964 = 198
+    _0x4e3b02.save()
+    _0x4e3b02.beginPath()
+    _0x4e3b02.moveTo(74, _0x8a964)
+    _0x4e3b02.lineTo(297, _0x8a964)
+    _0x4e3b02.quadraticCurveTo(323, _0x8a964, 323, _0x8a964 + 26)
+    _0x4e3b02.lineTo(323, _0x8a964 + 315 - 26)
+    _0x4e3b02.quadraticCurveTo(323, _0x8a964 + 315, 297, _0x8a964 + 315)
+    _0x4e3b02.lineTo(74, _0x8a964 + 315)
+    _0x4e3b02.quadraticCurveTo(48, _0x8a964 + 315, 48, _0x8a964 + 315 - 26)
+    _0x4e3b02.lineTo(48, _0x8a964 + 26)
+    _0x4e3b02.quadraticCurveTo(48, _0x8a964, 74, _0x8a964)
+    _0x4e3b02.closePath()
+    _0x4e3b02.strokeStyle = '#fff'
+    _0x4e3b02.lineWidth = 14
+    _0x4e3b02.stroke()
+    _0x4e3b02.clip()
+    if (_0x33ecaf.complete && _0x33ecaf.naturalWidth !== 0) {
+      const _0x38b982 = _0x33ecaf.width / _0x33ecaf.height
+      let _0x2c4429 = 0,
+        _0x40951a = 0,
+        _0x253e7e = _0x33ecaf.width,
+        _0x13ce26 = _0x33ecaf.height
+      _0x38b982 > 0.873015873015873
+        ? ((_0x13ce26 = _0x33ecaf.height),
+          (_0x253e7e = _0x13ce26 * 0.873015873015873),
+          (_0x2c4429 = (_0x33ecaf.width - _0x253e7e) / 2))
+        : ((_0x253e7e = _0x33ecaf.width),
+          (_0x13ce26 = _0x253e7e * 1.1454545454545455),
+          (_0x40951a = (_0x33ecaf.height - _0x13ce26) / 2))
+      _0x4e3b02.imageSmoothingEnabled = true
+      _0x4e3b02.imageSmoothingQuality = 'high'
+      _0x4e3b02.drawImage(
+        _0x33ecaf,
+        _0x2c4429,
+        _0x40951a,
+        _0x253e7e,
+        _0x13ce26,
+        48,
+        _0x8a964,
+        275,
+        315
+      )
+    } else {
+      _0x4e3b02.fillStyle = '#D1D9E0'
+      _0x4e3b02.fillRect(48, _0x8a964, 275, 315)
+      _0x4e3b02.fillStyle = '#607589'
+      _0x4e3b02.font = '500 32px Inter'
+      _0x4e3b02.textAlign = 'center'
+      _0x4e3b02.fillText('Loading...', 185.5, _0x8a964 + 157.5)
+    }
+    _0x4e3b02.restore()
+    _0x4e3b02.textAlign = 'left'
+    const _0x41187b = 373
+    const _0x2ed85d = 1125 - _0x41187b - 130,
+      _0x4fad1d = _0x41187b + 15,
+      _0x2852a7 = _0x41187b + 250,
+      _0x1c6486 = 384,
+      _0x5edce7 = 375,
+      _0x34a810 = 170 + (_0x1c6486 - _0x5edce7) / 2 + 70
+    let _0x1813bb = _0x34a810
+    const _0x9b1bf6 = '#5A6472',
+      _0x3a5887 = '#2E3A48',
+      _0x2231cf = {
+        US: {
+          card: 'STUDENT ID CARD',
+          name: 'FULL NAME :',
+          id: 'STUDENT ID :',
+          dob: 'D.O.B :',
+          expires: 'EXPIRES :',
+        },
+        VN: {
+          card: 'THẺ SINH VIÊN',
+          name: 'HỌ TÊN :',
+          id: 'MÃ SINH VIÊN :',
+          dob: 'NGÀY SINH :',
+          expires: 'HẾT HẠN :',
+        },
+        KR: {
+          card: '학생증',
+          name: '전체 이름 :',
+          id: '학생 ID :',
+          dob: '생년월일 :',
+          expires: '만료일 :',
+        },
+        JP: {
+          card: 'ガクセイショウ',
+          name: 'フルネーム :',
+          id: 'ガクセイID :',
+          dob: 'セイネンガッピ :',
+          expires: 'ユウコウキゲン :',
+        },
+      }
+    let _0x3020d3 = 'US'
+    if (_0x2064d9.schoolName && _0x5b83aa[_0x2064d9.schoolName]) {
+      const _0x2384f1 = _0x5b83aa[_0x2064d9.schoolName].domain || ''
+      if (_0x2384f1.endsWith('.vn')) {
+        _0x3020d3 = 'VN'
+      } else {
+        if (_0x2384f1.endsWith('.edu')) {
+          _0x3020d3 = 'US'
+        } else {
+          if (_0x2384f1.endsWith('.ac.kr')) {
+            _0x3020d3 = 'KR'
+          } else {
+            if (_0x2384f1.endsWith('.ac.jp')) {
+              _0x3020d3 = 'JP'
+            }
+          }
+        }
+      }
+    }
+    const _0x4662b3 = _0x2231cf[_0x3020d3] || _0x2231cf.US
+    _0x4e3b02.font = '500 28px "Inter", "Noto Sans KR", system-ui, sans-serif'
+    _0x4e3b02.fillStyle = _0x9b1bf6
+    _0x4e3b02.fillText(_0x4662b3.name, _0x4fad1d, _0x1813bb)
+    _0x4e3b02.font = '700 34px "Inter", "Noto Sans KR", system-ui, sans-serif'
+    _0x4e3b02.fillStyle = '#202E3A'
+    _0x4e3b02.fillText(_0x55ed4d(_0x2064d9.studentName), _0x2852a7, _0x1813bb)
+    _0x1813bb += 75
+    _0x4e3b02.fillStyle = _0x9b1bf6
+    _0x4e3b02.font = '500 28px "Inter", "Noto Sans KR", system-ui, sans-serif'
+    _0x4e3b02.fillText(_0x4662b3.id, _0x4fad1d, _0x1813bb)
+    _0x4e3b02.fillStyle = _0x3a5887
+    _0x4e3b02.font = '600 30px "Inter", "Noto Sans KR", system-ui, sans-serif'
+    const _0x8361f8 = {
+        'Computer Science Engineering': 'CSE',
+        Cybersecurity: 'CYB',
+        'Information Technology': 'IT',
+        'Business Administration': 'BA',
+        'Mechanical Engineering': 'ME',
+        'Electrical Engineering': 'EE',
+        'Civil Engineering': 'CE',
+        'Data Science': 'DS',
+        'Artificial Intelligence': 'AI',
+        'Software Engineering': 'SE',
+        Accounting: 'ACC',
+        Finance: 'FIN',
+        Marketing: 'MKT',
+        'Hospitality Management': 'HM',
+        Tourism: 'TOU',
+        'Graphic Design': 'GD',
+        Multimedia: 'MM',
+        Biotechnology: 'BIO',
+        'Environmental Science': 'ENV',
+        'Food Technology': 'FT',
+        'English Language': 'EL',
+        'Japanese Language': 'JL',
+        'Korean Language': 'KL',
+        'Chinese Language': 'CL',
+        'Automotive Engineering': 'AE',
+        Logistics: 'LOG',
+        'International Business': 'IB',
+        'Public Relations': 'PR',
+        'Event Management': 'EM',
+        'Hotel Management': 'HM',
+        'Tourism Management': 'TM',
+        'Computer Networks': 'CN',
+        'Information Systems': 'IS',
+        'E-Commerce': 'EC',
+        Banking: 'BANK',
+        'Human Resource Management': 'HRM',
+        'Construction Engineering': 'CON',
+        Architecture: 'ARC',
+        Mathematics: 'MATH',
+        Physics: 'PHY',
+        Chemistry: 'CHEM',
+        Biology: 'BIO',
+        Law: 'LAW',
+        'Political Science': 'PS',
+        Sociology: 'SOC',
+        Psychology: 'PSY',
+        Education: 'EDU',
+        'Primary Education': 'PEDU',
+        'Early Childhood Education': 'ECEDU',
+        'Sports Management': 'SM',
+        'Physical Education': 'PE',
+      },
+      _0x28eba4 = {
+        'Khoa học Máy tính': 'Computer Science',
+        'Kỹ thuật Phần mềm': 'Software Engineering',
+        'Công nghệ Thông tin': 'Information Technology',
+        'Kỹ thuật Điện': 'Electrical Engineering',
+        'Kỹ thuật Cơ khí': 'Mechanical Engineering',
+        'Kỹ thuật Xây dựng': 'Civil Engineering',
+        'Kỹ thuật Hóa học': 'Chemical Engineering',
+        'Kỹ thuật Y sinh': 'Biomedical Engineering',
+        'Sinh học': 'Biology',
+        'Hóa sinh': 'Biochemistry',
+        'Hóa học': 'Chemistry',
+        'Vật lý': 'Physics',
+        'Toán học': 'Mathematics',
+        'Thống kê': 'Statistics',
+        'Quản trị Kinh doanh': 'Business Administration',
+        'Tài chính': 'Finance',
+        Marketing: 'Marketing',
+        'Kế toán': 'Accounting',
+        'Kinh tế học': 'Economics',
+        'Quan hệ Quốc tế': 'International Relations',
+        'Khoa học Chính trị': 'Political Science',
+        Luật: 'Law',
+        'Y khoa': 'Medicine',
+        'Điều dưỡng': 'Nursing',
+        'Dược học': 'Pharmacy',
+        'Nha khoa': 'Dentistry',
+        'Sư phạm': 'Education',
+        'Giáo dục Mầm non': 'Early Childhood Education',
+        'Văn học Anh': 'English Literature',
+        'Lịch sử': 'History',
+        'Xã hội học': 'Sociology',
+        'Tâm lý học': 'Psychology',
+        'Triết học': 'Philosophy',
+        'Khoa học Môi trường': 'Environmental Science',
+        'Địa chất': 'Geology',
+        'Nhân học': 'Anthropology',
+        'Kiến trúc': 'Architecture',
+        'Thiết kế Đồ họa': 'Graphic Design',
+        'Mỹ thuật': 'Fine Arts',
+        'Âm nhạc': 'Music',
+        'Báo chí': 'Journalism',
+        'Ngôn ngữ học': 'Linguistics',
+        'Quản trị Khách sạn': 'Hospitality Management',
+      },
+      _0x4fbebf = {
+        컴퓨터공학: 'Computer Science Engineering',
+        사이버보안: 'Cybersecurity',
+        정보기술: 'Information Technology',
+        경영학: 'Business Administration',
+        기계공학: 'Mechanical Engineering',
+        전기공학: 'Electrical Engineering',
+        토목공학: 'Civil Engineering',
+        데이터과학: 'Data Science',
+        인공지능: 'Artificial Intelligence',
+        소프트웨어공학: 'Software Engineering',
+        회계학: 'Accounting',
+        금융학: 'Finance',
+        마케팅: 'Marketing',
+        호텔경영학: 'Hospitality Management',
+        관광학: 'Tourism',
+        그래픽디자인: 'Graphic Design',
+        멀티미디어학: 'Multimedia',
+        생명공학: 'Biotechnology',
+        환경과학: 'Environmental Science',
+        식품공학: 'Food Technology',
+        영어영문학: 'English Language',
+        일본어학: 'Japanese Language',
+        한국어학: 'Korean Language',
+        중국어학: 'Chinese Language',
+        자동차공학: 'Automotive Engineering',
+        물류학: 'Logistics',
+        국제경영학: 'International Business',
+        홍보학: 'Public Relations',
+        이벤트경영: 'Event Management',
+        관광경영학: 'Tourism Management',
+        컴퓨터네트워크: 'Computer Networks',
+        정보시스템: 'Information Systems',
+        전자상거래: 'E-Commerce',
+        은행학: 'Banking',
+        인사관리: 'Human Resource Management',
+        건설공학: 'Construction Engineering',
+        건축학: 'Architecture',
+        수학: 'Mathematics',
+        물리학: 'Physics',
+        화학: 'Chemistry',
+        생물학: 'Biology',
+        법학: 'LAW',
+        정치학: 'PS',
+        사회학: 'SOC',
+        심리학: 'PSY',
+        교육학: 'EDU',
+        초등교육: 'PEDU',
+        유아교육: 'ECEDU',
+        스포츠경영학: 'SM',
+        체육교육: 'PE',
+      },
+      _0x4eef7a = {
+        コンピュータサイエンス: 'Computer Science',
+        ソフトウェアこうがく: 'Software Engineering',
+        じょうほうぎじゅつ: 'Information Technology',
+        でんきこうがく: 'Electrical Engineering',
+        きかいこうがく: 'Mechanical Engineering',
+        どぼくこうがく: 'Civil Engineering',
+        かがくこうがく: 'Chemical Engineering',
+        せいぶついがくこうがく: 'Biomedical Engineering',
+        せいぶつがく: 'Biology',
+        せいかがく: 'Biochemistry',
+        かがく: 'Chemistry',
+        ぶつりがく: 'Physics',
+        すうがく: 'Mathematics',
+        とうけいがく: 'Statistics',
+        けいえいがく: 'Business Administration',
+        きんゆう: 'Finance',
+        マーケティング: 'Marketing',
+        かいけい: 'Accounting',
+        けいざいがく: 'Economics',
+        こくさいかんけい: 'International Relations',
+        せいじがく: 'Political Science',
+        ほうがく: 'Law',
+        いがく: 'Medicine',
+        かんごがく: 'Nursing',
+        やくがく: 'Pharmacy',
+        しかがく: 'Dentistry',
+        きょういくがく: 'Education',
+        しょとうきょういく: 'Primary Education',
+        えいぶんがく: 'English Literature',
+        れきしがく: 'History',
+        しゃかいがく: 'Sociology',
+        しんりがく: 'Psychology',
+        てつがく: 'Philosophy',
+        かんきょうかがく: 'Environmental Science',
+        ちしつがく: 'Geology',
+        じんるいがく: 'Anthropology',
+        けんちくがく: 'Architecture',
+        グラフィックデザイン: 'Graphic Design',
+        びじゅつ: 'Fine Arts',
+        おんがく: 'Music',
+        ジャーナリズム: 'Journalism',
+        げんごがく: 'Linguistics',
+        ホスピタリティマネジメント: 'Hospitality Management',
+      }
+    function _0x52acf5(_0x2b473a, _0x3d414d) {
+      if (!_0x2b473a) {
+        return ''
+      }
+      let _0x439286 = _0x2b473a
+      if (_0x3d414d === 'VN' && _0x28eba4[_0x2b473a]) {
+        _0x439286 = _0x28eba4[_0x2b473a]
+      }
+      _0x3d414d === 'JP' &&
+        _0x4eef7a[_0x2b473a] &&
+        (_0x439286 = _0x4eef7a[_0x2b473a])
+      if (_0x3d414d === 'KR') {
+        const _0x4e2ecb = String(_0x2b473a).replace(/\s+/g, '')
+        _0x4fbebf[_0x4e2ecb] && (_0x439286 = _0x4fbebf[_0x4e2ecb])
+      }
+      let _0x525879 = _0x8361f8[_0x439286]
+      if (!_0x525879) {
+        const _0x189696 = String(_0x439286).toUpperCase().match(/[A-Z]/g)
+        _0x525879 = _0x189696
+          ? _0x189696.join('').slice(0, 4)
+          : _0x3d414d === 'KR'
+          ? 'GWA'
+          : _0x3d414d === 'JP'
+          ? 'GAKU'
+          : 'GEN'
+      }
+      return _0x525879
+    }
+    const _0x3da191 = _0x52acf5(_0x2064d9.course, _0x3020d3)
+    let _0x4961ee = '' + _0x2064d9.studentId,
+      _0x2e030d = 10 - _0x3da191.length
+    if (_0x2e030d < 1) {
+      _0x2e030d = 1
+    }
+    let _0x11a598 = _0x4961ee.slice(-_0x2e030d),
+      _0x268819 = '' + _0x3da191 + _0x11a598
+    _0x4e3b02.fillText(_0x268819, _0x2852a7, _0x1813bb)
+    _0x1813bb += 75
+    _0x4e3b02.fillStyle = _0x9b1bf6
+    _0x4e3b02.font = '500 28px "Inter", "Noto Sans KR", system-ui, sans-serif'
+    _0x4e3b02.fillText(_0x4662b3.dob, _0x4fad1d, _0x1813bb)
+    _0x4e3b02.fillStyle = _0x3a5887
+    _0x4e3b02.font = '600 30px "Inter", "Noto Sans KR", system-ui, sans-serif'
+    _0x4e3b02.fillText(_0x2064d9.dob, _0x2852a7, _0x1813bb)
+    _0x1813bb += 75
+    _0x4e3b02.fillStyle = _0x9b1bf6
+    _0x4e3b02.font = '500 28px "Inter", "Noto Sans KR", system-ui, sans-serif'
+    _0x4e3b02.fillText(_0x4662b3.expires, _0x4fad1d, _0x1813bb)
+    _0x4e3b02.fillStyle = _0x3a5887
+    _0x4e3b02.font = '600 30px "Inter", "Noto Sans KR", system-ui, sans-serif'
+    _0x4e3b02.fillText(_0x2064d9.validity, _0x2852a7, _0x1813bb)
+    _0x1813bb += 75
+    let _0x282cfb =
+      _0x3020d3 === 'IN'
+        ? 'विभाग :'
+        : _0x3020d3 === 'KR'
+        ? '학과 :'
+        : _0x3020d3 === 'JP'
+        ? 'がくぶ :'
+        : 'DEPARTMENT :'
+    _0x4e3b02.fillStyle = _0x9b1bf6
+    _0x4e3b02.font = '500 28px "Inter", "Noto Sans KR", system-ui, sans-serif'
+    _0x4e3b02.fillText(_0x282cfb, _0x4fad1d, _0x1813bb)
+    _0x4e3b02.fillStyle = _0x3a5887
+    _0x4e3b02.font = '600 30px "Inter", "Noto Sans KR", system-ui, sans-serif'
+    _0x4e3b02.fillText(_0x2064d9.course, _0x2852a7, _0x1813bb)
+    try {
+      const _0x2328f8 = 1125 - (_0x2852a7 + 280),
+        _0x1237e9 = 148,
+        _0xe41b67 = 609,
+        _0x4d23c8 = _0xe41b67 - _0x1237e9,
+        _0x161982 = Math.min(100, _0x2328f8 - 20),
+        _0x3cced3 = String(_0x2064d9.studentId || '123456789').replace(
+          /\D/g,
+          ''
+        )
+      if (_0x3cced3.length === 0) {
+        throw new Error('Invalid barcode value')
+      }
+      if (typeof JsBarcode !== 'undefined' && JsBarcode) {
+        const _0x9c5b95 = document.createElement('canvas'),
+          _0xd8b660 = _0x9c5b95.getContext('2d')
+        try {
+          JsBarcode(_0x9c5b95, _0x3cced3, {
+            format: 'CODE128',
+            width: 3,
+            height: 120,
+            displayValue: false,
+            margin: 0,
+            background: '#ffffff',
+            lineColor: '#000000',
+          })
+          if (_0x9c5b95.width > 0 && _0x9c5b95.height > 0) {
+            const _0x146ebc = document.createElement('canvas')
+            _0x146ebc.width = _0x9c5b95.height
+            _0x146ebc.height = _0x9c5b95.width
+            const _0x51c306 = _0x146ebc.getContext('2d')
+            _0x51c306.fillStyle = '#ffffff'
+            _0x51c306.fillRect(0, 0, _0x146ebc.width, _0x146ebc.height)
+            _0x51c306.translate(_0x146ebc.width / 2, _0x146ebc.height / 2)
+            _0x51c306.rotate(Math.PI / 2)
+            _0x51c306.drawImage(
+              _0x9c5b95,
+              -_0x9c5b95.width / 2,
+              -_0x9c5b95.height / 2
+            )
+            const _0x4765ce = Math.min(
+                _0x161982 / _0x146ebc.width,
+                _0x4d23c8 / _0x146ebc.height
+              ),
+              _0xfd1848 = Math.min(_0x161982, _0x146ebc.width * _0x4765ce),
+              _0x3ffff8 = Math.min(_0x4d23c8, _0x146ebc.height * _0x4765ce),
+              _0x58e607 = 1077 - _0xfd1848,
+              _0x4983a1 = _0x1237e9 + (_0x4d23c8 - _0x3ffff8) / 2
+            _0x4e3b02.drawImage(
+              _0x146ebc,
+              _0x58e607,
+              _0x4983a1,
+              _0xfd1848,
+              _0x3ffff8
+            )
+          } else {
+            throw new Error('Barcode generation failed')
+          }
+        } catch (_0x31d826) {
+          console.warn('JsBarcode generation failed:', _0x31d826)
+          throw _0x31d826
+        }
+      } else {
+        throw new Error('JsBarcode library not available')
+      }
+    } catch (_0x386cd3) {
+      console.warn(
+        'Barcode generation error, using fallback pattern:',
+        _0x386cd3.message
+      )
+      const _0x4f6ecb = 30,
+        _0x3d77ad = 185,
+        _0x5d3f95 = 609,
+        _0x109617 = _0x5d3f95 - _0x3d77ad,
+        _0x14c00c = Math.min(100, 1125 - (_0x2852a7 + 280) - 50),
+        _0x64a168 = 1125 - _0x4f6ecb - _0x14c00c,
+        _0x3f8ba5 = _0x3d77ad
+      _0x4e3b02.fillStyle = '#000000'
+      const _0x29fd39 = String(_0x2064d9.studentId || '123456789'),
+        _0x42081a = _0x29fd39
+          .split('')
+          .reduce(
+            (_0x4ac2e5, _0x3c952b) => _0x4ac2e5 + parseInt(_0x3c952b || '0'),
+            0
+          )
+      for (let _0x3d30a0 = 0; _0x3d30a0 < 25; _0x3d30a0++) {
+        const _0x14c79b = _0x64a168 + _0x3d30a0 * (_0x14c00c / 25),
+          _0x4bb12f = ((_0x42081a + _0x3d30a0) % 4) + 1,
+          _0x29775e = Math.min(_0x4bb12f, _0x14c00c / 25 - 1)
+        _0x14c79b + _0x29775e <= _0x64a168 + _0x14c00c &&
+          _0x4e3b02.fillRect(_0x14c79b, _0x3f8ba5, _0x29775e, _0x109617)
+      }
+    }
+    _0x15930a()
+    const _0xa2e7fd = 307,
+      _0x2eb8f9 = 48 + (275 - _0xa2e7fd) / 2,
+      _0x274e42 = _0x8a964 + 315 + 22
+    _0x4e3b02.save()
+    const _0x581db0 = _0x4e3b02.createLinearGradient(
+      _0x2eb8f9,
+      _0x274e42,
+      _0x2eb8f9 + _0xa2e7fd,
+      _0x274e42 + 86
+    )
+    _0x581db0.addColorStop(0, '#ffffff')
+    _0x581db0.addColorStop(0.5, '#fafbfc')
+    _0x581db0.addColorStop(1, '#f4f6f8')
+    _0x4e3b02.save()
+    _0x4e3b02.fillStyle = 'rgba(0,0,0,0.06)'
+    _0x8c156e(_0x4e3b02, _0x2eb8f9 + 2, _0x274e42 + 2, _0xa2e7fd, 86, 18)
+    _0x4e3b02.fill()
+    _0x4e3b02.restore()
+    _0x8c156e(_0x4e3b02, _0x2eb8f9, _0x274e42, _0xa2e7fd, 86, 18)
+    _0x4e3b02.fillStyle = _0x581db0
+    _0x4e3b02.fill()
+    _0x4e3b02.strokeStyle = 'rgba(226,232,240,0.8)'
+    _0x4e3b02.lineWidth = 1
+    _0x4e3b02.stroke()
+    _0x4e3b02.save()
+    _0x4e3b02.globalAlpha = 0.6
+    _0x4e3b02.strokeStyle = 'rgba(255,255,255,0.9)'
+    _0x4e3b02.lineWidth = 1
+    _0x8c156e(_0x4e3b02, _0x2eb8f9 + 1, _0x274e42 + 1, _0xa2e7fd - 2, 84, 17)
+    _0x4e3b02.stroke()
+    _0x4e3b02.restore()
+    _0x4e3b02.clip()
+    const _0x5b067c = {
+        US: {
+          class: 'Class',
+          course: 'Course',
+        },
+        VN: {
+          class: 'Lớp',
+          course: 'Khóa học',
+        },
+        KR: {
+          class: '반',
+          course: '과정',
+        },
+        JP: {
+          class: 'クラス',
+          course: 'コース',
+        },
+      },
+      _0x42e258 = _0x5b067c[_0x3020d3] || _0x5b067c.US
+    _0x4e3b02.textAlign = 'center'
+    let _0x1aa782 = ''
+    if (_0x2064d9.validity) {
+      const _0x34543a = String(_0x2064d9.validity).match(/(\d{4})$/)
+      _0x1aa782 = _0x34543a ? _0x34543a[1] : ''
+    }
+    _0x4e3b02.fillStyle = '#374151'
+    _0x4e3b02.font = "700 22px 'Inter', 'Noto Sans KR', system-ui, sans-serif"
+    _0x4e3b02.fillText(
+      _0x42e258.course + ': 2025 - ' + _0x1aa782,
+      _0x2eb8f9 + _0xa2e7fd / 2,
+      _0x274e42 + 32
+    )
+    function _0x7859f7() {
+      const _0x49a052 = [
+        'BSc',
+        'BA',
+        'BEng',
+        'LLB',
+        'BBA',
+        'MBA',
+        'MSc',
+        'MA',
+        'MEng',
+        'PhD',
+        'MD',
+        'EdD',
+      ]
+      const _0x399e42 = [
+        'A',
+        'B',
+        'C',
+        'D',
+        'E',
+        'F',
+        'G',
+        'H',
+        'I',
+        'J',
+        'K',
+        'L',
+        'M',
+        'N',
+        'O',
+        'P',
+        'Q',
+        'R',
+        'S',
+        'T',
+      ]
+      const _0x46a7ea = new Date().getFullYear(),
+        _0x253139 = 2025 + Math.floor(Math.random() * (_0x46a7ea - 2025 + 1))
+      const _0x34c455 = _0x49a052[Math.floor(Math.random() * _0x49a052.length)],
+        _0x207357 = _0x399e42[Math.floor(Math.random() * _0x399e42.length)]
+      return _0x34c455 + '-' + _0x253139 + '-' + _0x207357
+    }
+    const _0x425d3f = _0x7859f7()
+    _0x4e3b02.fillStyle = '#6366f1'
+    if (_0x3020d3 === 'US') {
+      const _0x28e8fb = _0x42e258.class + ':',
+        _0x5455bb = ' ' + _0x425d3f
+      _0x4e3b02.font = "900 20px 'Inter', 'Noto Sans KR', system-ui, sans-serif"
+      const _0x4ed36a = _0x4e3b02.measureText(_0x28e8fb).width
+      _0x4e3b02.font = "400 20px 'Inter', 'Noto Sans KR', system-ui, sans-serif"
+      const _0x494fdf = _0x4e3b02.measureText(_0x5455bb).width,
+        _0x4b4d9a = _0x4ed36a + _0x494fdf,
+        _0x51f2b5 = _0x2eb8f9 + _0xa2e7fd / 2 - _0x4b4d9a / 2
+      _0x4e3b02.font = "900 20px 'Inter', 'Noto Sans KR', system-ui, sans-serif"
+      _0x4e3b02.textAlign = 'left'
+      _0x4e3b02.fillText(_0x28e8fb, _0x51f2b5, _0x274e42 + 65)
+      _0x4e3b02.font = "400 20px 'Inter', 'Noto Sans KR', system-ui, sans-serif"
+      _0x4e3b02.fillText(_0x5455bb, _0x51f2b5 + _0x4ed36a, _0x274e42 + 65)
+      _0x4e3b02.textAlign = 'center'
+    } else {
+      _0x4e3b02.font = "700 20px 'Inter', 'Noto Sans KR', system-ui, sans-serif"
+      _0x4e3b02.fillText(
+        _0x42e258.class + ': ' + _0x425d3f,
+        _0x2eb8f9 + _0xa2e7fd / 2,
+        _0x274e42 + 65
+      )
+    }
+    _0x4e3b02.restore()
+    _0x4e3b02.restore()
+  }
+  function _0x52654b(_0x378dc4) {
+    const _0x5471cf = String(_0x378dc4 || '').trim(),
+      _0x1f23e8 = /^[\p{Script=Latin}\p{Number}\s.'-]+$/u.test(_0x5471cf)
+    if (_0x1f23e8) {
+      const _0x2a6fc6 = _0x5471cf.split(/\s+/),
+        _0x489f2d = (_0x2a6fc6[0] || '')
+          .toLowerCase()
+          .replace(/[^a-z0-9]/g, ''),
+        _0x521e15 = _0x2a6fc6
+          .slice(1)
+          .join('')
+          .toLowerCase()
+          .replace(/[^a-z0-9]/g, ''),
+        _0x1995f5 = _0x521e15 ? _0x489f2d + '.' + _0x521e15 : _0x489f2d
+      return _0x1995f5 || 'u' + Math.random().toString(36).slice(2, 7)
+    }
+    function _0x1ef838(_0x434760) {
+      const _0x43255a = [
+        'g',
+        'kk',
+        'n',
+        'd',
+        'tt',
+        'r',
+        'm',
+        'b',
+        'pp',
+        's',
+        'ss',
+        '',
+        'j',
+        'jj',
+        'ch',
+        'k',
+        't',
+        'p',
+        'h',
+      ]
+      const _0x2e16ce = [
+        'a',
+        'ae',
+        'ya',
+        'yae',
+        'eo',
+        'e',
+        'yeo',
+        'ye',
+        'o',
+        'wa',
+        'wae',
+        'oe',
+        'yo',
+        'u',
+        'wo',
+        'we',
+        'wi',
+        'yu',
+        'eu',
+        'ui',
+        'i',
+      ]
+      const _0x5a6f94 = [
+        '',
+        'k',
+        'k',
+        'ks',
+        'n',
+        'nj',
+        'nh',
+        't',
+        'l',
+        'lk',
+        'lm',
+        'lb',
+        'ls',
+        'lt',
+        'lp',
+        'lh',
+        'm',
+        'p',
+        'ps',
+        't',
+        't',
+        'ng',
+        't',
+        't',
+        'k',
+        't',
+        'p',
+        't',
+      ]
+      let _0x1bc853 = ''
+      for (const _0x3c00a7 of _0x434760) {
+        const _0x68990c = _0x3c00a7.codePointAt(0)
+        if (_0x68990c >= 44032 && _0x68990c <= 55203) {
+          const _0x370df4 = _0x68990c - 44032,
+            _0x538f79 = Math.floor(_0x370df4 / 588),
+            _0x2fa285 = Math.floor((_0x370df4 % 588) / 28),
+            _0x5ba1c0 = _0x370df4 % 28
+          _0x1bc853 +=
+            _0x43255a[_0x538f79] + _0x2e16ce[_0x2fa285] + _0x5a6f94[_0x5ba1c0]
+        }
+      }
+      return _0x1bc853
+    }
+    let _0x1ee74d = _0x1ef838(_0x5471cf)
+    _0x1ee74d = _0x1ee74d.toLowerCase().replace(/[^a-z0-9]/g, '')
+    if (!_0x1ee74d) {
+      let _0x4fe6d0 = 0
+      for (const _0x19a64e of _0x5471cf)
+        _0x4fe6d0 = (_0x4fe6d0 * 131 + _0x19a64e.codePointAt(0)) >>> 0
+      _0x1ee74d = 'u' + _0x4fe6d0.toString(36).slice(0, 6)
+    }
+    return _0x1ee74d.slice(0, 32)
+  }
+  const _0xd577d4 = new Set()
+  function _0x58150d(_0x248166) {
+    const _0x2051d8 = String(_0x248166 || '')
+      .replace(/[^A-Za-z\s]/g, ' ')
+      .trim()
+    if (!_0x2051d8) {
+      return ''
+    }
+    const _0x818d1d = _0x2051d8
+        .split(/\s+/)
+        .map((_0x13c385) => _0x13c385[0] || '')
+        .join(''),
+      _0x13ed90 = (_0x818d1d || _0x2051d8.slice(0, 3)).toLowerCase()
+    return _0x13ed90.slice(0, 6)
+  }
+  function _0x493959(_0x3e424d) {
+    const _0x3fec85 = new Date().getFullYear()
+    if (!_0x3e424d) {
+      return String(_0x3fec85)
+    }
+    const _0x5e26e3 = String(_0x3e424d).match(/(\d{4})$/)
+    const _0x2f068f = _0x5e26e3 ? parseInt(_0x5e26e3[1], 10) : _0x3fec85,
+      _0x4cb73c = Math.max(2000, _0x2f068f - 4)
+    return String(_0x4cb73c)
+  }
+  function _0xc94a9e({
+    fullName: _0x7d58d7,
+    domainPart: _0x1f9b19,
+    dob: _0x2a3b6a,
+    course: _0x4d80d6,
+    validTo: _0x713351,
+    studentId: _0xb86018,
+  }) {
+    const _0x3fceab = _0x52654b(_0x7d58d7),
+      _0xbefbb9 = (() => {
+        if (!_0x2a3b6a) {
+          return ''
+        }
+        const _0x53c8b5 = String(_0x2a3b6a).match(/(\d{4})/)
+        return _0x53c8b5 ? _0x53c8b5[1] : ''
+      })(),
+      _0x319646 = _0x58150d(_0x4d80d6)
+    const _0x35daa2 = _0x493959(_0x713351),
+      _0x21c295 = String(_0xb86018 || '').slice(-3)
+    let _0x158d20 = ''
+    {
+      let _0xce28a6 = 0
+      const _0x291722 = String(_0x7d58d7 || '')
+      for (const _0x4a6f2c of _0x291722)
+        _0xce28a6 = (_0xce28a6 * 131 + _0x4a6f2c.codePointAt(0)) >>> 0
+      _0x158d20 = _0xce28a6.toString(36).slice(0, 3)
+    }
+    const _0x1f6364 = /\.ac\.kr$/i.test(_0x1f9b19),
+      _0x583628 = /\.ac\.jp$/i.test(_0x1f9b19) || /\.jp$/i.test(_0x1f9b19),
+      _0x210e08 = []
+    if (_0x1f6364) {
+      if (_0x35daa2) {
+        _0x210e08.push('' + _0x3fceab + _0x35daa2)
+      }
+      if (_0xbefbb9) {
+        _0x210e08.push('' + _0x3fceab + _0xbefbb9)
+      }
+      if (_0x319646) {
+        _0x210e08.push(_0x3fceab + '.' + _0x319646)
+      }
+      if (_0x158d20) {
+        _0x210e08.push(_0x3fceab + '.' + _0x158d20)
+      }
+      if (_0x21c295) {
+        _0x210e08.push('' + _0x3fceab + _0x21c295)
+      }
+    } else {
+      if (_0x583628) {
+        let _0x1c9d88 = _0x3fceab
+        if (_0x7d58d7) {
+          const _0x4cfc6c = String(_0x7d58d7).trim().split(/\s+/),
+            _0x4fae7f = {
+              あ: 'a',
+              い: 'i',
+              う: 'u',
+              え: 'e',
+              お: 'o',
+              か: 'ka',
+              き: 'ki',
+              く: 'ku',
+              け: 'ke',
+              こ: 'ko',
+              さ: 'sa',
+              し: 'shi',
+              す: 'su',
+              せ: 'se',
+              そ: 'so',
+              た: 'ta',
+              ち: 'chi',
+              つ: 'tsu',
+              て: 'te',
+              と: 'to',
+              な: 'na',
+              に: 'ni',
+              ぬ: 'nu',
+              ね: 'ne',
+              の: 'no',
+              は: 'ha',
+              ひ: 'hi',
+              ふ: 'fu',
+              へ: 'he',
+              ほ: 'ho',
+              ま: 'ma',
+              み: 'mi',
+              む: 'mu',
+              め: 'me',
+              も: 'mo',
+              や: 'ya',
+              ゆ: 'yu',
+              よ: 'yo',
+              ら: 'ra',
+              り: 'ri',
+              る: 'ru',
+              れ: 're',
+              ろ: 'ro',
+              わ: 'wa',
+              を: 'wo',
+              ん: 'n',
+              が: 'ga',
+              ぎ: 'gi',
+              ぐ: 'gu',
+              げ: 'ge',
+              ご: 'go',
+              ざ: 'za',
+              じ: 'ji',
+              ず: 'zu',
+              ぜ: 'ze',
+              ぞ: 'zo',
+              だ: 'da',
+              ぢ: 'ji',
+              づ: 'zu',
+              で: 'de',
+              ど: 'do',
+              ば: 'ba',
+              び: 'bi',
+              ぶ: 'bu',
+              べ: 'be',
+              ぼ: 'bo',
+              ぱ: 'pa',
+              ぴ: 'pi',
+              ぷ: 'pu',
+              ぺ: 'pe',
+              ぽ: 'po',
+              ア: 'a',
+              イ: 'i',
+              ウ: 'u',
+              エ: 'e',
+              オ: 'o',
+              カ: 'ka',
+              キ: 'ki',
+              ク: 'ku',
+              ケ: 'ke',
+              コ: 'ko',
+              サ: 'sa',
+              シ: 'shi',
+              ス: 'su',
+              セ: 'se',
+              ソ: 'so',
+              タ: 'ta',
+              チ: 'chi',
+              ツ: 'tsu',
+              テ: 'te',
+              ト: 'to',
+              ナ: 'na',
+              ニ: 'ni',
+              ヌ: 'nu',
+              ネ: 'ne',
+              ノ: 'no',
+              ハ: 'ha',
+              ヒ: 'hi',
+              フ: 'fu',
+              ヘ: 'he',
+              ホ: 'ho',
+              マ: 'ma',
+              ミ: 'mi',
+              ム: 'mu',
+              メ: 'me',
+              モ: 'mo',
+              ヤ: 'ya',
+              ユ: 'yu',
+              ヨ: 'yo',
+              ラ: 'ra',
+              リ: 'ri',
+              ル: 'ru',
+              レ: 're',
+              ロ: 'ro',
+              ワ: 'wa',
+              ヲ: 'wo',
+              ン: 'n',
+              ガ: 'ga',
+              ギ: 'gi',
+              グ: 'gu',
+              ゲ: 'ge',
+              ゴ: 'go',
+              ザ: 'za',
+              ジ: 'ji',
+              ズ: 'zu',
+              ゼ: 'ze',
+              ゾ: 'zo',
+              ダ: 'da',
+              ヂ: 'ji',
+              ヅ: 'zu',
+              デ: 'de',
+              ド: 'do',
+              バ: 'ba',
+              ビ: 'bi',
+              ブ: 'bu',
+              ベ: 'be',
+              ボ: 'bo',
+              パ: 'pa',
+              ピ: 'pi',
+              プ: 'pu',
+              ペ: 'pe',
+              ポ: 'po',
+            },
+            _0x24fade = (_0x172d63) =>
+              _0x172d63
+                .split('')
+                .map((_0x2f70b0) => _0x4fae7f[_0x2f70b0] || _0x2f70b0)
+                .join('')
+                .replace(/[^a-z0-9.]/g, '')
+                .toLowerCase()
+          if (_0x4cfc6c.length >= 2) {
+            const _0xd4d084 = _0x4cfc6c[0],
+              _0x1521c0 = _0x4cfc6c.slice(1).join(''),
+              _0x518dd1 = _0x24fade(_0xd4d084),
+              _0x1df547 = _0x24fade(_0x1521c0)
+            _0x518dd1 &&
+              _0x1df547 &&
+              ((_0x1c9d88 = _0x518dd1 + '.' + _0x1df547),
+              _0x210e08.push('' + _0x1c9d88 + _0x35daa2),
+              _0x210e08.push(_0x1c9d88 + '.' + _0x319646),
+              _0x210e08.push(_0x1df547 + '.' + _0x518dd1 + _0x35daa2),
+              _0x210e08.push(_0x1df547 + '.' + _0x518dd1 + '.' + _0x319646))
+          }
+        }
+        if (_0x35daa2) {
+          _0x210e08.push('' + _0x1c9d88 + _0x35daa2)
+        }
+        if (_0x319646) {
+          _0x210e08.push(_0x1c9d88 + '.' + _0x319646)
+        }
+        if (_0xbefbb9) {
+          _0x210e08.push('' + _0x1c9d88 + _0xbefbb9)
+        }
+        if (_0x158d20) {
+          _0x210e08.push(_0x1c9d88 + '.' + _0x158d20)
+        }
+        if (_0x21c295) {
+          _0x210e08.push('' + _0x1c9d88 + _0x21c295)
+        }
+      } else {
+        if (_0xbefbb9) {
+          _0x210e08.push('' + _0x3fceab + _0xbefbb9)
+        }
+        if (_0x319646) {
+          _0x210e08.push(_0x3fceab + '.' + _0x319646)
+        }
+        if (_0x35daa2) {
+          _0x210e08.push('' + _0x3fceab + _0x35daa2)
+        }
+        if (_0x21c295) {
+          _0x210e08.push('' + _0x3fceab + _0x21c295)
+        }
+        if (_0x158d20) {
+          _0x210e08.push(_0x3fceab + '.' + _0x158d20)
+        }
+      }
+    }
+    _0x210e08.push(_0x3fceab + '.' + Math.random().toString(36).slice(2, 6))
+    for (const _0x1b03c5 of _0x210e08) {
+      const _0x1a8d1a = _0x1b03c5 + _0x1f9b19
+      if (!_0xd577d4.has(_0x1a8d1a)) {
+        return _0xd577d4.add(_0x1a8d1a), _0x1a8d1a
+      }
+    }
+    while (true) {
+      const _0x486d78 =
+        _0x3fceab + '.' + Math.random().toString(36).slice(2, 8) + _0x1f9b19
+      if (!_0xd577d4.has(_0x486d78)) {
+        return _0xd577d4.add(_0x486d78), _0x486d78
+      }
+    }
+  }
+  function _0x4f3f10() {
+    const _0x298588 = _0x41d157.dob.value
+        ? new Date(_0x41d157.dob.value).toLocaleDateString('en-GB')
+        : '28/06/2002',
+      _0x40bb37 = _0x41d157.validTo.value
+        ? new Date(_0x41d157.validTo.value).toLocaleDateString('en-GB')
+        : '22/09/2032',
+      _0x43fc75 = _0x41d157.schoolName.value || 'University Name',
+      _0x1a585c = _0x41d157.studentName.value.trim() || 'Sapna Patil',
+      _0xffc3b0 =
+        _0x5b83aa[_0x41d157.schoolName.value] &&
+        _0x5b83aa[_0x41d157.schoolName.value].domain
+          ? _0x5b83aa[_0x41d157.schoolName.value].domain
+          : '@student.edu',
+      _0x2b282d = _0xc94a9e({
+        fullName: _0x1a585c,
+        domainPart: _0xffc3b0,
+        dob: _0x298588,
+        course: _0x41d157.course.value,
+        validTo: _0x40bb37,
+        studentId: _0x41d157.studentId.value,
+      })
+    const _0x2590bc = document.getElementById('school-email')
+    if (_0x2590bc) {
+      _0x2590bc.textContent = _0x2b282d
+    }
+    const _0x46d30c = new Date()
+    let _0x33217d = (_0x5b83aa[_0x43fc75] && _0x5b83aa[_0x43fc75].domain) || '',
+      _0x16db7e = _0x481a8d(_0x33217d),
+      _0x570822 = { country: _0x16db7e }
+    if (_0x16db7e === 'us') {
+      _0x570822 = {
+        country: 'us',
+        countryName: 'United States',
+        countryCode: 'US',
+        countryLocal: 'Hoa Kỳ',
+      }
+    } else {
+      if (_0x16db7e === 'vietnam') {
+        _0x570822 = {
+          country: 'vietnam',
+          countryName: 'Vietnam',
+          countryCode: 'VN',
+          countryLocal: 'Việt Nam',
+        }
+      } else {
+        if (_0x16db7e === 'korea') {
+          _0x570822 = {
+            country: 'korea',
+            countryName: 'Korea',
+            countryCode: 'KO',
+            countryLocal: 'Hàn Quốc',
+          }
+        } else {
+          _0x16db7e === 'japan' &&
+            (_0x570822 = {
+              country: 'japan',
+              countryName: 'Japan',
+              countryCode: 'JP',
+              countryLocal: 'Nhật Bản',
+            })
+        }
+      }
+    }
+    _0x2064d9 = {
+      schoolName: _0x43fc75,
+      studentName: _0x41d157.studentName.value || 'Sapna Patil',
+      studentId: _0x41d157.studentId.value || '203848238',
+      dob: _0x298588,
+      course: _0x41d157.course.value || 'Cybersecurity',
+      validity: _0x40bb37,
+      issueDate: _0x46d30c.toLocaleDateString('en-GB'),
+      ..._0x570822,
+    }
+    window.cardInfo = _0x2064d9
+    window.postMessage(
+      {
+        type: 'CARD_INFO',
+        data: _0x2064d9,
+      },
+      '*'
+    )
+    if (!_0x21c38f) {
+      requestAnimationFrame(_0x272ccb)
+    }
+  }
+  function _0x3271d8(_0x419c7b, _0x2eb825, _0x25daba = 'en') {
+    const _0x266906 = _0x2eb825.filter(
+        (_0x471c5e) =>
+          _0x5b83aa[_0x471c5e] && _0x5b83aa[_0x471c5e].domain.endsWith('.edu')
+      ),
+      _0x3d9c8a = _0x2eb825.filter(
+        (_0x409eb5) =>
+          _0x5b83aa[_0x409eb5] && _0x5b83aa[_0x409eb5].domain.endsWith('.vn')
+      ),
+      _0x43b670 = _0x2eb825.filter(
+        (_0x310bfb) =>
+          _0x5b83aa[_0x310bfb] && _0x5b83aa[_0x310bfb].domain.endsWith('.ac.kr')
+      ),
+      _0x2be05d = _0x2eb825.filter(
+        (_0x1e26d8) =>
+          _0x5b83aa[_0x1e26d8] && _0x5b83aa[_0x1e26d8].domain.endsWith('.ac.jp')
+      )
+    if (!document.querySelector('#country-optgroup-styles')) {
+      const _0x1e0918 = document.createElement('style')
+      _0x1e0918.id = 'country-optgroup-styles'
+      _0x1e0918.textContent =
+        '\n                select optgroup {\n                    font-weight: 900;\n                    font-size: 15px;\n                    padding: 8px 0;\n                }\n                select optgroup[label*="United States"],\n                select optgroup[label*="Hoa Kỳ"],\n                select optgroup[label*="미국"],\n                select optgroup[label*="アメリカ"] {\n                    color: #1e40af;\n                    background: linear-gradient(to right, #dbeafe, transparent);\n                }\n                select optgroup[label*="vietnam"],\n                select optgroup[label*="Việt Nam"],\n                select optgroup[label*="인도"],\n                select optgroup[label*="インド"] {\n                    color: #ea580c;\n                    background: linear-gradient(to right, #fed7aa, transparent);\n                }\n                select optgroup[label*="Korea"],\n                select optgroup[label*="한국"],\n                select optgroup[label*="Hàn Quốc"],\n                select optgroup[label*="かんこく"] {\n                    color: #dc2626;\n                    background: linear-gradient(to right, #fecaca, transparent);\n                }\n                select optgroup[label*="Japan"],\n                select optgroup[label*="にほん"],\n                select optgroup[label*="Nhật Bản"],\n                select optgroup[label*="일본"] {\n                    color: #c026d3;\n                    background: linear-gradient(to right, #f5d0fe, transparent);\n                }\n                select option {\n                    padding: 6px 12px;\n                    color: #374151;\n                }\n            '
+      document.head.appendChild(_0x1e0918)
+    }
+    if (_0x266906.length) {
+      const _0x1f8b75 = document.createElement('optgroup')
+      _0x1f8b75.label =
+        '\uD83C\uDDFA\uD83C\uDDF8 ' +
+        (_0x25daba === 'vi'
+          ? 'Hoa Kỳ'
+          : _0x25daba === 'ko'
+          ? '미국'
+          : _0x25daba === 'ja'
+          ? 'アメリカ'
+          : 'United States')
+      _0x266906.forEach((_0x30ccff) => {
+        const _0x113909 = document.createElement('option')
+        _0x113909.value = _0x30ccff
+        _0x113909.textContent = _0x30ccff
+        _0x1f8b75.appendChild(_0x113909)
+      })
+      _0x419c7b.appendChild(_0x1f8b75)
+    }
+    if (_0x3d9c8a.length) {
+      const _0x1b17fb = document.createElement('optgroup')
+      _0x1b17fb.label =
+        '\uD83C\uDDFB\uD83C\uDDF3 ' +
+        (_0x25daba === 'vi'
+          ? 'Việt Nam'
+          : _0x25daba === 'ko'
+          ? '베트남'
+          : _0x25daba === 'ja'
+          ? 'ベトナム'
+          : 'Vietnam')
+      _0x3d9c8a.forEach((_0x200658) => {
+        const _0x43fb6b = document.createElement('option')
+        _0x43fb6b.value = _0x200658
+        _0x43fb6b.textContent = _0x200658
+        _0x1b17fb.appendChild(_0x43fb6b)
+      })
+      _0x419c7b.appendChild(_0x1b17fb)
+    }
+    if (_0x43b670.length) {
+      const _0x1a0e65 = document.createElement('optgroup')
+      _0x1a0e65.label =
+        '\uD83C\uDDF0\uD83C\uDDF7 ' +
+        (_0x25daba === 'ko'
+          ? '한국'
+          : _0x25daba === 'vi'
+          ? 'Hàn Quốc'
+          : _0x25daba === 'ja'
+          ? 'かんこく'
+          : 'Korea')
+      _0x43b670.forEach((_0x47f454) => {
+        const _0x59371d = document.createElement('option')
+        _0x59371d.value = _0x47f454
+        _0x59371d.textContent = _0x47f454
+        _0x1a0e65.appendChild(_0x59371d)
+      })
+      _0x419c7b.appendChild(_0x1a0e65)
+    }
+    if (_0x2be05d.length) {
+      const _0x416a6c = document.createElement('optgroup')
+      _0x416a6c.label =
+        '\uD83C\uDDEF\uD83C\uDDF5 ' +
+        (_0x25daba === 'ja'
+          ? 'にほん'
+          : _0x25daba === 'vi'
+          ? 'Nhật Bản'
+          : _0x25daba === 'ko'
+          ? '일본'
+          : 'Japan')
+      _0x2be05d.forEach((_0x35b3ba) => {
+        const _0x430bf8 = document.createElement('option')
+        _0x430bf8.value = _0x35b3ba
+        _0x430bf8.textContent = _0x35b3ba
+        _0x416a6c.appendChild(_0x430bf8)
+      })
+      _0x419c7b.appendChild(_0x416a6c)
+    }
+    const _0x24e8a2 = _0x2eb825.filter(
+      (_0x468df0) =>
+        !_0x266906.includes(_0x468df0) &&
+        !_0x3d9c8a.includes(_0x468df0) &&
+        !_0x43b670.includes(_0x468df0) &&
+        !_0x2be05d.includes(_0x468df0)
+    )
+    _0x24e8a2.length &&
+      _0x24e8a2.forEach((_0x2b1ddb) => {
+        const _0x590126 = document.createElement('option')
+        _0x590126.value = _0x2b1ddb
+        _0x590126.textContent = _0x2b1ddb
+        _0x419c7b.appendChild(_0x590126)
+      })
+  }
+  _0x145f97.onload = () => {
+    if (!_0x21c38f) {
+      requestAnimationFrame(_0x272ccb)
+    }
+  }
+  _0x33ecaf.onload = () => {
+    if (!_0x21c38f) {
+      requestAnimationFrame(_0x272ccb)
+    }
+  }
+  _0x54ede8.preloadFaces()
+  ;(async function _0x544545() {
+    const _0x785c54 = Object.keys(_0x5b83aa)
+    const _0x4d8b19 = Math.floor(Math.random() * _0x785c54.length),
+      _0x5301cc = _0x785c54[_0x4d8b19]
+    _0x41d157.schoolName.value = _0x5301cc
+    _0x41d157.schoolName.dispatchEvent(new Event('change', { bubbles: true }))
+    _0x41d157.studentName.value = _0x3abf9f(_0x5301cc)
+    _0x41d157.studentName.dispatchEvent(new Event('input', { bubbles: true }))
+    _0x41d157.studentId.value =
+      Math.floor(Math.random() * 900000000) + 100000000
+    _0x41d157.studentId.dispatchEvent(new Event('input', { bubbles: true }))
+    const _0x6b0b2b = new Date(),
+      _0x1342fb = _0x6b0b2b.getFullYear() - Math.floor(Math.random() * 8) - 18,
+      _0xe55abf = Math.floor(Math.random() * 12) + 1,
+      _0x167b0f = Math.floor(Math.random() * 28) + 1,
+      _0x37f791 = new Date(_0x1342fb, _0xe55abf - 1, _0x167b0f)
+    _0x41d157.dob.value = _0x37f791.toISOString().split('T')[0]
+    _0x41d157.dob.dispatchEvent(new Event('change', { bubbles: true }))
+    if (_0x41d157.course.options.length > 0) {
+      const _0x275dec = Math.floor(
+        Math.random() * _0x41d157.course.options.length
+      )
+      _0x41d157.course.selectedIndex = _0x275dec
+      _0x41d157.course.dispatchEvent(new Event('change', { bubbles: true }))
+    }
+    const _0x3ecd2d = new Date('2029-01-01'),
+      _0x9f1cb1 = new Date('2033-12-30')
+    const _0x1a7efc =
+        _0x3ecd2d.getTime() +
+        Math.random() * (_0x9f1cb1.getTime() - _0x3ecd2d.getTime()),
+      _0x95889d = new Date(_0x1a7efc)
+    _0x41d157.validTo.value = _0x95889d.toISOString().split('T')[0]
+    _0x41d157.validTo.dispatchEvent(new Event('change', { bubbles: true }))
+    await _0x2db35d()
+    _0x4f3f10()
+    _0x272ccb()
+  })()
+  _0x41d157.studentPhoto.addEventListener('change', (_0x493c16) => {
+    if (_0x493c16.target.files && _0x493c16.target.files[0]) {
+      _0x33ecaf.src = URL.createObjectURL(_0x493c16.target.files[0])
+    }
+  })
+  document.addEventListener('paste', (_0x489876) => {
+    const _0x40d7ee = _0x489876.clipboardData.items
+    for (let _0x393fe3 = 0; _0x393fe3 < _0x40d7ee.length; _0x393fe3++) {
+      if (_0x40d7ee[_0x393fe3].type.indexOf('image') !== -1) {
+        const _0x373102 = _0x40d7ee[_0x393fe3].getAsFile(),
+          _0x2ec259 = new FileReader()
+        _0x2ec259.onload = (_0x326c65) => {
+          _0x33ecaf.src = _0x326c65.target.result
+        }
+        _0x2ec259.readAsDataURL(_0x373102)
+        _0x489876.preventDefault()
+        return
+      }
+    }
+  })
+  _0x41d157.schoolName.addEventListener('change', (_0xf3b5b8) => {
+    const _0x4ab02b = _0xf3b5b8.target.value
+    if (_0x5b83aa[_0x4ab02b] && _0x5b83aa[_0x4ab02b].logo) {
+      _0x145f97.src = _0x5b83aa[_0x4ab02b].logo
+    }
+    let _0x5ce5b1 = 'en'
+    if (
+      _0x5b83aa[_0x4ab02b] &&
+      _0x5b83aa[_0x4ab02b].domain &&
+      _0x5b83aa[_0x4ab02b].domain.endsWith('.vn')
+    ) {
+      _0x5ce5b1 = 'vi'
+    }
+    if (
+      _0x5b83aa[_0x4ab02b] &&
+      _0x5b83aa[_0x4ab02b].domain &&
+      _0x5b83aa[_0x4ab02b].domain.endsWith('.ac.kr')
+    ) {
+      _0x5ce5b1 = 'ko'
+    }
+    if (
+      _0x5b83aa[_0x4ab02b] &&
+      _0x5b83aa[_0x4ab02b].domain &&
+      _0x5b83aa[_0x4ab02b].domain.endsWith('.ac.jp')
+    ) {
+      _0x5ce5b1 = 'ja'
+    }
+    while (_0x41d157.course.options.length > 0) {
+      _0x41d157.course.remove(0)
+    }
+    const _0x1f9fbf = {
+      en: [
+        'Computer Science',
+        'Software Engineering',
+        'Information Technology',
+        'Electrical Engineering',
+        'Mechanical Engineering',
+        'Civil Engineering',
+        'Chemical Engineering',
+        'Biomedical Engineering',
+        'Biology',
+        'Biochemistry',
+        'Chemistry',
+        'Physics',
+        'Mathematics',
+        'Statistics',
+        'Business Administration',
+        'Finance',
+        'Marketing',
+        'Accounting',
+        'Economics',
+        'International Relations',
+        'Political Science',
+        'Law',
+        'Medicine',
+        'Nursing',
+        'Pharmacy',
+        'Dentistry',
+        'Education',
+        'Early Childhood Education',
+        'English Literature',
+        'History',
+        'Sociology',
+        'Psychology',
+        'Philosophy',
+        'Environmental Science',
+        'Geology',
+        'Anthropology',
+        'Architecture',
+        'Graphic Design',
+        'Fine Arts',
+        'Music',
+        'Journalism',
+        'Linguistics',
+        'Hospitality Management',
+      ],
+      vi: [
+        'Khoa học máy tính',
+        'Kỹ thuật phần mềm',
+        'Công nghệ thông tin',
+        'Kỹ thuật điện',
+        'Kỹ thuật cơ khí',
+        'Kỹ thuật xây dựng',
+        'Kỹ thuật hóa học',
+        'Kỹ thuật y sinh',
+        'Sinh học',
+        'Hóa sinh',
+        'Hóa học',
+        'Vật lý',
+        'Toán học',
+        'Thống kê',
+        'Quản trị kinh doanh',
+        'Tài chính',
+        'Tiếp thị',
+        'Kế toán',
+        'Kinh tế học',
+        'Quan hệ quốc tế',
+        'Khoa học chính trị',
+        'Luật',
+        'Y học',
+        'Điều dưỡng',
+        'Dược',
+        'Nha khoa',
+        'Giáo dục',
+        'Giáo dục mầm non',
+        'Văn học Anh',
+        'Lịch sử',
+        'Xã hội học',
+        'Tâm lý học',
+        'Triết học',
+        'Khoa học môi trường',
+        'Địa chất học',
+        'Nhân học',
+        'Kiến trúc',
+        'Thiết kế đồ họa',
+        'Nghệ thuật tự do',
+        'Âm nhạc',
+        'Báo chí',
+        'Ngôn ngữ học',
+        'Quản lý khách sạn',
+      ],
+      ko: [
+        '컴퓨터공학',
+        '사이버보안',
+        '정보기술',
+        '경영학',
+        '기계공학',
+        '전기공학',
+        '토목공학',
+        '데이터과학',
+        '인공지능',
+        '소프트웨어공학',
+        '회계학',
+        '금융학',
+        '마케팅',
+        '호텔경영학',
+        '관광학',
+        '그래픽디자인',
+        '멀티미디어학',
+        '생명공학',
+        '환경과학',
+        '식품공학',
+        '영어영문학',
+        '일본어학',
+        '한국어학',
+        '중국어학',
+        '자동차공학',
+        '물류학',
+        '국제경영학',
+        '홍보학',
+        '이벤트경영',
+        '관광경영학',
+        '컴퓨터네트워크',
+        '정보시스템',
+        '전자상거래',
+        '은행학',
+        '인사관리',
+        '건설공학',
+        '건축학',
+        '수학',
+        '물리학',
+        '화학',
+        '생물학',
+        '법학',
+        '정치학',
+        '사회학',
+        '심리학',
+        '교육학',
+        '초등교육',
+        '유아교육',
+        '스포츠경영학',
+        '체육교육',
+        '역사',
+        '미술',
+        '음악',
+        '저널리즘',
+        '언어학',
+      ],
+      ja: [
+        'コンピュータサイエンス',
+        'ソフトウェアこうがく',
+        'じょうほうぎじゅつ',
+        'でんきこうがく',
+        'きかいこうがく',
+        'どぼくこうがく',
+        'かがくこうがく',
+        'せいぶついがくこうがく',
+        'せいぶつがく',
+        'せいかがく',
+        'かがく',
+        'ぶつりがく',
+        'すうがく',
+        'とうけいがく',
+        'けいえいがく',
+        'きんゆうがく',
+        'マーケティング',
+        'かいけいがく',
+        'けいざいがく',
+        'こくさいかんけいがく',
+        'せいじがく',
+        'ほうがく',
+        'いがく',
+        'かんごがく',
+        'やくがく',
+        'しかがく',
+        'きょういくがく',
+        'しょとうきょういく',
+        'えいぶんがく',
+        'れきしがく',
+        'しゃかいがく',
+        'しんりがく',
+        'てつがく',
+        'かんきょうかがく',
+        'ちしつがく',
+        'じんるいがく',
+        'けんちくがく',
+        'グラフィックデザイン',
+        'びじゅつ',
+        'おんがく',
+        'ジャーナリズム',
+        'げんごがく',
+        'ホスピタリティマネジメント',
+      ],
+    }
+    _0x1f9fbf[_0x5ce5b1].forEach((_0x54167c) => {
+      const _0x1a3bf6 = document.createElement('option')
+      _0x1a3bf6.value = _0x1a3bf6.textContent = _0x54167c
+      _0x41d157.course.appendChild(_0x1a3bf6)
+    })
+    _0x41d157.studentName.value = _0x3abf9f(_0x4ab02b)
+    _0x41d157.studentId.value = Math.floor(
+      100000000 + Math.random() * 900000000
+    )
+    const _0x3a0377 = new Date(),
+      _0x332bd4 =
+        _0x3a0377.getFullYear() - (18 + Math.floor(Math.random() * 8)),
+      _0xd080d1 = Math.floor(Math.random() * 12) + 1,
+      _0xa3c945 = Math.floor(Math.random() * 28) + 1
+    _0x41d157.dob.value = new Date(_0x332bd4, _0xd080d1 - 1, _0xa3c945)
+      .toISOString()
+      .split('T')[0]
+    _0x41d157.course.options.length > 0 &&
+      (_0x41d157.course.selectedIndex = Math.floor(
+        Math.random() * _0x41d157.course.options.length
+      ))
+    const _0x117baa = new Date('2029-01-01'),
+      _0x4906d5 = new Date('2033-12-30'),
+      _0x276b55 =
+        _0x117baa.getTime() +
+        Math.random() * (_0x4906d5.getTime() - _0x117baa.getTime())
+    _0x41d157.validTo.value = new Date(_0x276b55).toISOString().split('T')[0]
+    try {
+      _0x2db35d()
+    } catch (_0x458d88) {}
+    _0x4f3f10()
+    _0x272ccb()
+  })
+  _0x41d157.customSchoolName.addEventListener('input', _0x4f3f10)
+  _0x41d157.customLogoUrl.addEventListener('input', () => {
+    _0x145f97.src =
+      _0x41d157.customLogoUrl.value ||
+      'https://placehold.co/100x100/E0E7FF/4338CA?text=LOGO'
+  })
+  ;[
+    _0x41d157.studentName,
+    _0x41d157.studentId,
+    _0x41d157.dob,
+    _0x41d157.course,
+    _0x41d157.validTo,
+  ].forEach((_0x29cc7c) => _0x29cc7c.addEventListener('input', _0x4f3f10))
+  _0x2fc912.randomName.addEventListener('click', () => {
+    _0x41d157.studentName.value = _0x3abf9f(_0x41d157.schoolName.value)
+    _0x4f3f10()
+  })
+  _0x2fc912.randomId.addEventListener('click', () => {
+    _0x41d157.studentId.value = Math.floor(
+      100000000 + Math.random() * 900000000
+    )
+    _0x4f3f10()
+  })
+  _0x2fc912.randomDob.addEventListener('click', () => {
+    const _0x37156b = new Date(2000, 0, 1),
+      _0x5a4cbd = new Date(2006, 11, 31),
+      _0x27e32a = new Date(
+        _0x37156b.getTime() +
+          Math.random() * (_0x5a4cbd.getTime() - _0x37156b.getTime())
+      )
+    _0x41d157.dob.value = _0x27e32a.toISOString().split('T')[0]
+    _0x4f3f10()
+  })
+  _0x2fc912.randomValidTo.addEventListener('click', () => {
+    const _0x174b68 = new Date(2029, 0, 1),
+      _0x1d0be2 = new Date(2033, 11, 30),
+      _0x4f3f18 = new Date(
+        _0x174b68.getTime() +
+          Math.random() * (_0x1d0be2.getTime() - _0x174b68.getTime())
+      )
+    _0x41d157.validTo.value = _0x4f3f18.toISOString().split('T')[0]
+    _0x4f3f10()
+  })
+  _0x2fc912.randomColor.addEventListener('click', () => {
+    _0x4e833d = _0x46e1e4()
+    _0x272ccb()
+    _0x3318aa()
+  })
+  _0x2fc912.randomAll.addEventListener('click', () => {
+    const _0x5354f3 = document.getElementById('dice-icon')
+    _0x5354f3 &&
+      (_0x5354f3.classList.add('dice-spin'),
+      setTimeout(() => {
+        _0x5354f3.classList.remove('dice-spin')
+      }, 800))
+    _0x2fc912.randomAll.style.transform = 'scale(0.95)'
+    setTimeout(() => {
+      _0x2fc912.randomAll.style.transform = 'translateY(-3px)'
+    }, 150)
+    if (_0x41d157.schoolName.options.length > 0) {
+      const _0x51e86f = Math.floor(
+          Math.random() * _0x41d157.schoolName.options.length
+        ),
+        _0x3a170e = _0x41d157.schoolName.options[_0x51e86f].value
+      _0x41d157.schoolName.value = _0x3a170e
+      _0x41d157.schoolName.dispatchEvent(new Event('change', { bubbles: true }))
+    }
+    _0x41d157.studentName.value = _0x3abf9f(_0x41d157.schoolName.value)
+    _0x41d157.studentName.dispatchEvent(new Event('input', { bubbles: true }))
+    const _0x1c0163 = Math.floor(Math.random() * 900000000) + 100000000
+    _0x41d157.studentId.value = _0x1c0163
+    _0x41d157.studentId.dispatchEvent(new Event('input', { bubbles: true }))
+    const _0x26a734 = new Date(),
+      _0x4f5141 = _0x26a734.getFullYear() - Math.floor(Math.random() * 8) - 18,
+      _0x2aa9f9 = Math.floor(Math.random() * 12) + 1,
+      _0x77e27c = Math.floor(Math.random() * 28) + 1,
+      _0x32b8fe = new Date(_0x4f5141, _0x2aa9f9 - 1, _0x77e27c)
+    _0x41d157.dob.value = _0x32b8fe.toISOString().split('T')[0]
+    _0x41d157.dob.dispatchEvent(new Event('change', { bubbles: true }))
+    if (_0x41d157.course.options.length > 0) {
+      const _0x43d7c0 = Math.floor(
+        Math.random() * _0x41d157.course.options.length
+      )
+      _0x41d157.course.selectedIndex = _0x43d7c0
+      _0x41d157.course.dispatchEvent(new Event('change', { bubbles: true }))
+    }
+    const _0x1cc1e0 = new Date('2029-01-01'),
+      _0x4d1c54 = new Date('2033-12-30'),
+      _0x2860b7 =
+        _0x1cc1e0.getTime() +
+        Math.random() * (_0x4d1c54.getTime() - _0x1cc1e0.getTime()),
+      _0x4222db = new Date(_0x2860b7)
+    _0x41d157.validTo.value = _0x4222db.toISOString().split('T')[0]
+    _0x41d157.validTo.dispatchEvent(new Event('change', { bubbles: true }))
+    _0x2db35d()
+      .then(() => {})
+      .catch((_0x447292) => {
+        console.warn('\u26A0️ Random Face failed to load:', _0x447292.message)
+      })
+    setTimeout(() => {
+      _0x4f3f10()
+      _0x272ccb()
+      _0x32bb15()
+    }, 100)
+  })
+  _0x2fc912.randomFaces.addEventListener('click', () => {
+    const _0x20144b = _0x2fc912.randomFaces.innerHTML
+    _0x2fc912.randomFaces.classList.add('loading')
+    _0x2fc912.randomFaces.innerHTML =
+      '\n            <svg class="w-4 h-4 animate-spin mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">\n                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>\n            </svg>\n            <span>Đang tạo. Vui lòng chờ <span class="loading-dots"><span>.</span><span>.</span><span>.</span></span></span>\n        '
+    if (!document.querySelector('#loading-dots-styles')) {
+      const _0xce10d2 = document.createElement('style')
+      _0xce10d2.id = 'loading-dots-styles'
+      _0xce10d2.textContent =
+        '\n                .loading-dots span {\n                    animation: loading-dots 1.5s infinite;\n                }\n                .loading-dots span:nth-child(1) { animation-delay: 0s; }\n                .loading-dots span:nth-child(2) { animation-delay: 0.5s; }\n                .loading-dots span:nth-child(3) { animation-delay: 1s; }\n                @keyframes loading-dots {\n                    0%, 60%, 100% { opacity: 0.3; }\n                    30% { opacity: 1; }\n                }\n            '
+      document.head.appendChild(_0xce10d2)
+    }
+    _0x38377f(5)
+      .then((_0x34176a) => {
+        _0x2fc912.randomFaces.classList.remove('loading')
+        setTimeout(() => {
+          _0x2fc912.randomFaces.innerHTML = _0x20144b
+        }, 10)
+        _0x991df(_0x34176a)
+      })
+      .catch((_0x8b565e) => {
+        _0x2fc912.randomFaces.classList.remove('loading')
+        _0x2fc912.randomFaces.classList.add('error')
+        _0x2fc912.randomFaces.innerHTML =
+          '\n                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">\n                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>\n                </svg>\n                <span>Failed</span>\n            '
+        setTimeout(() => {
+          _0x2fc912.randomFaces.classList.remove('error')
+          _0x2fc912.randomFaces.innerHTML = _0x20144b
+        }, 2000)
+      })
+  })
+  function _0x1979a1() {
+    const _0x22fe82 = document.createElement('div')
+    _0x22fe82.id = 'auto-load-notification'
+    document.body.appendChild(_0x22fe82)
+  }
+  function _0x273666() {
+    const _0x3106e6 = document.getElementById('auto-load-notification')
+  }
+  function _0x32bb15() {
+    const _0x34597b = document.createElement('div')
+    _0x34597b.style.cssText =
+      '\n            position: fixed;\n            top: 20px;\n            right: 20px;\n            background: linear-gradient(135deg, #00f260, #0575e6);\n            color: white;\n            padding: 15px 25px;\n            border-radius: 10px;\n            box-shadow: 0 10px 30px rgba(0,0,0,0.3);\n            z-index: 10000;\n            font-weight: bold;\n            animation: slideInRight 0.5s ease-out;\n        '
+    _0x34597b.innerHTML = '\uD83C\uDF89 Thông tin đã được thay đổi'
+    const _0x2d5387 = document.createElement('style')
+    _0x2d5387.textContent =
+      '\n            @keyframes slideInRight {\n                from { transform: translateX(100%); opacity: 0; }\n                to { transform: translateX(0); opacity: 1; }\n            }\n        '
+    document.head.appendChild(_0x2d5387)
+    document.body.appendChild(_0x34597b)
+    setTimeout(() => {
+      _0x34597b.remove()
+      _0x2d5387.remove()
+    }, 3000)
+  }
+  function _0x3318aa() {
+    const _0xbcb8d = document.createElement('div')
+    _0xbcb8d.style.cssText =
+      '\n            position: fixed;\n            top: 20px;\n            right: 20px;\n            background: linear-gradient(135deg, #ff6b6b, #ffa500);\n            color: white;\n            padding: 15px 25px;\n            border-radius: 10px;\n            box-shadow: 0 10px 30px rgba(0,0,0,0.3);\n            z-index: 10000;\n            font-weight: bold;\n            animation: slideInRight 0.5s ease-out;\n        '
+    _0xbcb8d.innerHTML = '\uD83C\uDFA8 Màu sắc đã được thay đổi!'
+    const _0x444b29 = document.createElement('style')
+    _0x444b29.textContent =
+      '\n            @keyframes slideInRight {\n                from { transform: translateX(100%); opacity: 0; }\n                to { transform: translateX(0); opacity: 1; }\n            }\n        '
+    document.head.appendChild(_0x444b29)
+    document.body.appendChild(_0xbcb8d)
+    setTimeout(() => {
+      _0xbcb8d.remove()
+      _0x444b29.remove()
+    }, 3000)
+  }
+  _0x2fc912.download.addEventListener('click', () => {
+    const _0x9ee585 = _0x2fc912.download.querySelector('svg')
+    _0x9ee585 &&
+      ((_0x9ee585.style.animation = 'download-bounce 0.6s ease-in-out'),
+      setTimeout(() => {
+        _0x9ee585.style.animation = ''
+      }, 600))
+    _0x2fc912.download.style.transform = 'scale(0.95)'
+    setTimeout(() => {
+      _0x2fc912.download.style.transform = ''
+    }, 150)
+    const _0x381b19 = 48,
+      _0x4ec3c2 = document.createElement('canvas')
+    _0x4ec3c2.width = 1145
+    _0x4ec3c2.height = 654
+    const _0x39a9cd = _0x4ec3c2.getContext('2d')
+    _0x39a9cd.save()
+    _0x8c156e(_0x39a9cd, 0, 0, _0x4ec3c2.width, _0x4ec3c2.height, _0x381b19)
+    _0x39a9cd.clip()
+    _0x39a9cd.fillStyle = '#F8F9FA'
+    _0x39a9cd.fillRect(0, 0, _0x4ec3c2.width, _0x4ec3c2.height)
+    _0x39a9cd.restore()
+    _0x39a9cd.save()
+    _0x39a9cd.shadowColor = 'rgba(0, 0, 0, 0.12)'
+    _0x39a9cd.shadowBlur = 12
+    _0x39a9cd.shadowOffsetX = 0
+    _0x39a9cd.shadowOffsetY = 6
+    _0x39a9cd.fillStyle = '#FFF'
+    _0x8c156e(_0x39a9cd, 10, 10, 1125, 634, 40)
+    _0x39a9cd.fill()
+    _0x39a9cd.restore()
+    _0x39a9cd.strokeStyle = '#E5E7EB'
+    _0x39a9cd.lineWidth = 1
+    _0x8c156e(_0x39a9cd, 10, 10, 1125, 634, 40)
+    _0x39a9cd.stroke()
+    const _0x1fb4e2 = new Image()
+    _0x1fb4e2.onload = () => {
+      _0x39a9cd.drawImage(_0x1fb4e2, 10, 10, 1125, 634)
+      const _0x259e4d = document.createElement('a'),
+        _0x2ea0b3 = document.querySelector('.student-name'),
+        _0x22eeb8 =
+          (_0x2ea0b3
+            ? _0x2ea0b3.value || _0x2ea0b3.textContent
+            : _0x41d157.studentName.value) || 'Student ID Card',
+        _0x4ce2bd = _0x22eeb8
+          .trim()
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .replace(/[^\p{L}\p{N}]+/gu, '_')
+          .replace(/^_+|_+$/g, '')
+      _0x259e4d.download = (_0x4ce2bd || 'Student_ID_Card') + '.png'
+      _0x259e4d.href = _0x4ec3c2.toDataURL('image/png', 1)
+      _0x259e4d.click()
+    }
+    try {
+      _0x1fb4e2.src = _0x2a10cc.toDataURL('image/png')
+    } catch (_0x3392ef) {
+      _0x39a9cd.drawImage(
+        _0x2a10cc,
+        0,
+        0,
+        _0x2a10cc.width,
+        _0x2a10cc.height,
+        10,
+        10,
+        1125,
+        634
+      )
+      const _0x33876a = document.createElement('a'),
+        _0x37cfbd = document.querySelector('.student-name'),
+        _0x1de757 =
+          (_0x37cfbd
+            ? _0x37cfbd.value || _0x37cfbd.textContent
+            : _0x41d157.studentName.value) || 'Student ID Card',
+        _0x123136 = _0x1de757
+          .trim()
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .replace(/[^\p{L}\p{N}]+/gu, '_')
+          .replace(/^_+|_+$/g, '')
+      _0x33876a.download = (_0x123136 || 'Student_ID_Card') + '.png'
+      _0x33876a.href = _0x4ec3c2.toDataURL('image/png', 1)
+      _0x33876a.click()
+    }
+  })
+  _0x2fc912.copyEmail.addEventListener('click', () => {
+    const _0x37dedf = document.getElementById('school-email')
+    if (!_0x37dedf) {
+      return
+    }
+    const _0x58bab4 = _0x37dedf.textContent.trim()
+    const _0x48c31c = _0x2fc912.copyEmail.innerHTML,
+      _0x1524a0 = () => {
+        _0x2fc912.copyEmail.innerHTML =
+          '<span class="text-green-600 text-xs font-semibold">Đã sao chép</span>'
+        setTimeout(() => (_0x2fc912.copyEmail.innerHTML = _0x48c31c), 1500)
+      }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard
+        .writeText(_0x58bab4)
+        .then(_0x1524a0)
+        .catch(() => {})
+    } else {
+      const _0x33b4a4 = document.createElement('textarea')
+      _0x33b4a4.value = _0x58bab4
+      document.body.appendChild(_0x33b4a4)
+      _0x33b4a4.select()
+      try {
+        document.execCommand('copy')
+      } catch (_0x1c48a0) {}
+      document.body.removeChild(_0x33b4a4)
+      _0x1524a0()
+    }
+  })
+  _0x2fc912.copySchool.addEventListener('click', () => {
+    const _0xb0ad0a = _0x41d157.schoolName.value
+    const _0x15f5ba = _0x2fc912.copySchool.innerHTML,
+      _0x49c678 = () => {
+        _0x2fc912.copySchool.innerHTML =
+          '<span class="text-green-600 text-xs font-semibold">Đã sao chép</span>'
+        setTimeout(() => (_0x2fc912.copySchool.innerHTML = _0x15f5ba), 1500)
+      }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard
+        .writeText(_0xb0ad0a)
+        .then(_0x49c678)
+        .catch(() => {})
+    } else {
+      const _0x51bb60 = document.createElement('textarea')
+      _0x51bb60.value = _0xb0ad0a
+      document.body.appendChild(_0x51bb60)
+      _0x51bb60.select()
+      try {
+        document.execCommand('copy')
+      } catch (_0x452bb7) {}
+      document.body.removeChild(_0x51bb60)
+      _0x49c678()
+    }
+  })
+  function _0x51ff59() {
+    const _0xe5b2c4 = document.getElementById('auto-verify-popup')
+    _0xe5b2c4.classList.add('show')
+  }
+  function _0x4ebd32() {
+    const _0x2ff235 = document.getElementById('auto-verify-popup')
+    _0x2ff235.classList.remove('show')
+  }
+  function _0x5385ff(
+    _0x5ad402,
+    _0x3c2165,
+    _0x510a19,
+    _0x1bb169 = 0,
+    _0x8ba751 = null
+  ) {
+    const _0x57126e = document.getElementById('auto-verify-popup'),
+      _0x14d2aa = document.getElementById('popup-icon')
+    const _0x4b9fd8 = document.getElementById('popup-title'),
+      _0x5a246f = document.getElementById('popup-message'),
+      _0x3fa824 = document.getElementById('popup-progress-bar'),
+      _0x2dff35 = document.getElementById('popup-details')
+    _0x14d2aa.className = 'popup-icon ' + _0x5ad402
+    switch (_0x5ad402) {
+      case 'loading':
+        _0x14d2aa.textContent = '\uD83D\uDD04'
+        break
+      case 'success':
+        _0x14d2aa.textContent = '\u2705'
+        break
+      case 'error':
+        _0x14d2aa.textContent = '\u274C'
+        break
+      case 'warning':
+        _0x14d2aa.textContent = '\u26A0️'
+        break
+    }
+    _0x4b9fd8.textContent = _0x3c2165
+    _0x5a246f.textContent = _0x510a19
+    _0x3fa824.style.width = _0x1bb169 + '%'
+    _0x8ba751
+      ? ((document.getElementById('detail-name').textContent =
+          _0x8ba751.name || '-'),
+        (document.getElementById('detail-school').textContent =
+          _0x8ba751.school || '-'),
+        (document.getElementById('detail-email').textContent =
+          _0x8ba751.email || '-'),
+        (document.getElementById('detail-dob').textContent =
+          _0x8ba751.dateOfBirth || '-'),
+        (document.getElementById('detail-status').textContent =
+          _0x8ba751.status || 'Đang xử lý...'),
+        (_0x2dff35.style.display = 'block'))
+      : (_0x2dff35.style.display = 'none')
+  }
+  function _0x49401f(_0x5c7840 = 8000) {
+    setTimeout(() => {
+      _0x4ebd32()
+    }, _0x5c7840)
+  }
+  const _0x4d185e = document.getElementById('auto-verify-btn')
+  _0x4d185e.addEventListener('click', () => {
+    const _0x492884 = _0x2064d9.studentName || 'John Doe',
+      _0x88098b = _0x492884.trim().split(/\s+/),
+      _0x1806e9 = _0x88098b[0] || 'John'
+    const _0x1007c8 = _0x88098b.slice(1).join(' ') || 'Doe'
+    const _0x1b980b = _0x41d157.dob.value
+        ? new Date(_0x41d157.dob.value)
+        : new Date('2002-02-02'),
+      _0x21ed8c = String(_0x1b980b.getUTCDate()).padStart(2, '0'),
+      _0x1b7c8e = String(_0x1b980b.getUTCMonth() + 1).padStart(2, '0')
+    const _0x47c343 = _0x1b980b.getFullYear(),
+      _0xcf8a2f = _0x47c343 + '-' + _0x1b7c8e + '-' + _0x21ed8c,
+      _0x51dc8c = document.getElementById('school-email'),
+      _0x37c5ec = _0x51dc8c
+        ? _0x51dc8c.textContent.trim()
+        : _0x1806e9.toLowerCase() +
+          '.' +
+          _0x1007c8.toLowerCase().replace(/\s+/g, '') +
+          '@student.edu',
+      _0x3cd63f = _0x2064d9.schoolName || 'University',
+      _0x4ecb56 = {
+        country: 'Japan',
+        school: _0x3cd63f,
+        firstName: _0x1806e9,
+        lastName: _0x1007c8,
+        dateOfBirth: _0xcf8a2f,
+        email: _0x37c5ec,
+      }
+    _0x51ff59()
+    _0x5385ff(
+      'loading',
+      'Auto Verification',
+      'Đang lấy thông tin từ Student ID Card...',
+      10,
+      {
+        name: _0x1806e9 + ' ' + _0x1007c8,
+        school: _0x3cd63f,
+        email: _0x37c5ec,
+        dateOfBirth: _0xcf8a2f,
+        status: 'Khởi tạo...',
+      }
+    )
+    window.postMessage(
+      {
+        type: 'STUDENT_CARD_EXTRACT',
+        studentInfo: _0x4ecb56,
+      },
+      '*'
+    )
+    const _0x232ee9 = (_0x18014c) => {
+      if (_0x18014c.source !== window) {
+        return
+      }
+      _0x18014c.data.type === 'INFO_EXTRACTED' &&
+        (window.removeEventListener('message', _0x232ee9),
+        _0x18014c.data.success
+          ? (_0x5385ff(
+              'loading',
+              'Auto Verification',
+              'Bắt đầu Verification...',
+              30,
+              {
+                name: _0x1806e9 + ' ' + _0x1007c8,
+                school: _0x3cd63f,
+                email: _0x37c5ec,
+                dateOfBirth: _0xcf8a2f,
+                status: 'Đã trích xuất thông tin',
+              }
+            ),
+            setTimeout(() => {
+              _0x5385ff(
+                'loading',
+                'Auto Verification',
+                'Đang thực hiện Auto Verification với Google One...',
+                60,
+                {
+                  name: _0x1806e9 + ' ' + _0x1007c8,
+                  school: _0x3cd63f,
+                  email: _0x37c5ec,
+                  dateOfBirth: _0xcf8a2f,
+                  status: 'Đang verify với Google One',
+                }
+              )
+              window.postMessage(
+                {
+                  type: 'START_AUTO_VERIFICATION',
+                  studentInfo: _0x4ecb56,
+                },
+                '*'
+              )
+              const _0x149e31 = (_0x57c98e) => {
+                if (_0x57c98e.source !== window) {
+                  return
+                }
+                _0x57c98e.data.type === 'VERIFICATION_STARTED' &&
+                  (window.removeEventListener('message', _0x149e31),
+                  _0x57c98e.data.success
+                    ? (_0x5385ff(
+                        'success',
+                        'Verification Hoàn Thành!',
+                        'Đã hoàn thành verification! Google One đang được mở...',
+                        100,
+                        {
+                          name: _0x1806e9 + ' ' + _0x1007c8,
+                          school: _0x3cd63f,
+                          email: _0x37c5ec,
+                          dateOfBirth: _0xcf8a2f,
+                          status: 'Thành công! \uD83C\uDF89',
+                        }
+                      ),
+                      _0x49401f(8000))
+                    : (_0x5385ff(
+                        'warning',
+                        'Cần Can Thiệp',
+                        'Vui lòng mở Extension popup để tiếp tục verification process.',
+                        80,
+                        {
+                          name: _0x1806e9 + ' ' + _0x1007c8,
+                          school: _0x3cd63f,
+                          email: _0x37c5ec,
+                          dateOfBirth: _0xcf8a2f,
+                          status: 'Cần mở Extension',
+                        }
+                      ),
+                      _0x49401f(10000)))
+              }
+              window.addEventListener('message', _0x149e31)
+              setTimeout(() => {
+                window.removeEventListener('message', _0x149e31)
+                const _0x3cc269 = document.getElementById('auto-verify-popup')
+                _0x3cc269.classList.contains('show') &&
+                  (_0x5385ff(
+                    'warning',
+                    'Timeout Verification',
+                    'Process timeout! Vui lòng mở Extension để tiếp tục.',
+                    70,
+                    {
+                      name: _0x1806e9 + ' ' + _0x1007c8,
+                      school: _0x3cd63f,
+                      email: _0x37c5ec,
+                      dateOfBirth: _0xcf8a2f,
+                      status: 'Timeout - cần can thiệp',
+                    }
+                  ),
+                  _0x49401f(8000))
+              }, 15000)
+            }, 1500))
+          : (_0x5385ff(
+              'error',
+              'Lỗi Extension',
+              'Không thể kết nối với Extension! Vui lòng cài đặt Extension.',
+              0,
+              {
+                name: _0x1806e9 + ' ' + _0x1007c8,
+                school: _0x3cd63f,
+                email: _0x37c5ec,
+                dateOfBirth: _0xcf8a2f,
+                status: 'Extension chưa cài đặt',
+              }
+            ),
+            _0x49401f(8000)))
+    }
+    window.addEventListener('message', _0x232ee9)
+    setTimeout(() => {
+      window.removeEventListener('message', _0x232ee9)
+      const _0x5385f0 = document.getElementById('auto-verify-popup')
+      _0x5385f0.classList.contains('show') &&
+        (_0x5385ff(
+          'error',
+          'Extension Không Hoạt Động',
+          'Không thể kết nối với Extension! Vui lòng cài đặt hoặc kích hoạt Extension.',
+          0,
+          {
+            name: _0x1806e9 + ' ' + _0x1007c8,
+            school: _0x3cd63f,
+            email: _0x37c5ec,
+            dateOfBirth: _0xcf8a2f,
+            status: 'Extension không phản hồi',
+          }
+        ),
+        _0x49401f(8000))
+    }, 8000)
+  })
+  function _0x456a1f() {
+    const _0x2b9cfd = {
+      en: [
+        'Computer Science',
+        'Software Engineering',
+        'Information Technology',
+        'Electrical Engineering',
+        'Mechanical Engineering',
+        'Civil Engineering',
+        'Chemical Engineering',
+        'Biomedical Engineering',
+        'Biology',
+        'Biochemistry',
+        'Chemistry',
+        'Physics',
+        'Mathematics',
+        'Statistics',
+        'Business Administration',
+        'Finance',
+        'Marketing',
+        'Accounting',
+        'Economics',
+        'International Relations',
+        'Political Science',
+        'Law',
+        'Medicine',
+        'Nursing',
+        'Pharmacy',
+        'Dentistry',
+        'Education',
+        'Early Childhood Education',
+        'English Literature',
+        'History',
+        'Sociology',
+        'Psychology',
+        'Philosophy',
+        'Environmental Science',
+        'Geology',
+        'Anthropology',
+        'Architecture',
+        'Graphic Design',
+        'Fine Arts',
+        'Music',
+        'Journalism',
+        'Linguistics',
+        'Hospitality Management',
+      ],
+      vi: [
+        'Khoa học máy tính',
+        'Kỹ thuật phần mềm',
+        'Công nghệ thông tin',
+        'Kỹ thuật điện',
+        'Kỹ thuật cơ khí',
+        'Kỹ thuật xây dựng',
+        'Kỹ thuật hóa học',
+        'Kỹ thuật y sinh',
+        'Sinh học',
+        'Hóa sinh',
+        'Hóa học',
+        'Vật lý',
+        'Toán học',
+        'Thống kê',
+        'Quản trị kinh doanh',
+        'Tài chính',
+        'Tiếp thị',
+        'Kế toán',
+        'Kinh tế học',
+        'Quan hệ quốc tế',
+        'Khoa học chính trị',
+        'Luật',
+        'Y học',
+        'Điều dưỡng',
+        'Dược',
+        'Nha khoa',
+        'Giáo dục',
+        'Giáo dục mầm non',
+        'Văn học Anh',
+        'Lịch sử',
+        'Xã hội học',
+        'Tâm lý học',
+        'Triết học',
+        'Khoa học môi trường',
+        'Địa chất học',
+        'Nhân học',
+        'Kiến trúc',
+        'Thiết kế đồ họa',
+        'Nghệ thuật tự do',
+        'Âm nhạc',
+        'Báo chí',
+        'Ngôn ngữ học',
+        'Quản lý khách sạn',
+      ],
+      ko: [
+        '컴퓨터공학',
+        '사이버보안',
+        '정보 기술',
+        '전기 공학',
+        '기계 공학',
+        '토목 공학',
+        '화학 공학',
+        '생물 의공학',
+        '생물학',
+        '생화학',
+        '화학',
+        '물리학',
+        '수학',
+        '통계학',
+        '경영학',
+        '재무',
+        '마케팅',
+        '회계',
+        '경제학',
+        '국제 관계',
+        '정치 과학',
+        '법학',
+        '의학',
+        '간호학',
+        '약학',
+        '치의학',
+        '교육학',
+        '유아 교육',
+        '영문학',
+        '역사',
+        '사회학',
+        '심리학',
+        '철학',
+        '환경 과학',
+        '지질학',
+        '인류학',
+        '건축학',
+        '그래픽 디자인',
+        '미술',
+        '음악',
+        '저널리즘',
+        '언어학',
+        '환대 경영',
+      ],
+      ja: [
+        'コンピュータサイエンス',
+        'ソフトウェアこうがく',
+        'じょうほうぎじゅつ',
+        'でんきこうがく',
+        'きかいこうがく',
+        'どぼくこうがく',
+        'かがくこうがく',
+        'せいぶついがくこうがく',
+        'せいぶつがく',
+        'せいかがく',
+        'かがく',
+        'ぶつりがく',
+        'すうがく',
+        'とうけいがく',
+        'けいえいがく',
+        'きんゆうがく',
+        'マーケティング',
+        'かいけいがく',
+        'けいざいがく',
+        'こくさいかんけいがく',
+        'せいじがく',
+        'ほうがく',
+        'いがく',
+        'かんごがく',
+        'やくがく',
+        'しかがく',
+        'きょういくがく',
+        'しょとうきょういく',
+        'えいぶんがく',
+        'れきしがく',
+        'しゃかいがく',
+        'しんりがく',
+        'てつがく',
+        'かんきょうかがく',
+        'ちしつがく',
+        'じんるいがく',
+        'けんちくがく',
+        'グラフィックデザイン',
+        'びじゅつ',
+        'おんがく',
+        'ジャーナリズム',
+        'げんごがく',
+        'ホスピタリティマネジメント',
+      ],
+    }
+    _0x3271d8(_0x41d157.schoolName, _0x3755a7)
+    let _0x271616 = 'en'
+    if (_0x41d157.schoolName.value && _0x5b83aa[_0x41d157.schoolName.value]) {
+      const _0x36ff9a = _0x5b83aa[_0x41d157.schoolName.value].domain || ''
+      if (_0x36ff9a.endsWith('.vn')) {
+        _0x271616 = 'vi'
+      }
+      if (_0x36ff9a.endsWith('.ac.kr')) {
+        _0x271616 = 'ko'
+      }
+      if (_0x36ff9a.endsWith('.ac.jp')) {
+        _0x271616 = 'ja'
+      }
+    }
+    while (_0x41d157.course.options.length > 0) {
+      _0x41d157.course.remove(0)
+    }
+    _0x2b9cfd[_0x271616].forEach((_0x54c68b) => {
+      const _0x5c84b3 = document.createElement('option')
+      _0x5c84b3.value = _0x5c84b3.textContent = _0x54c68b
+      _0x41d157.course.appendChild(_0x5c84b3)
+    })
+    if (_0x41d157.schoolName.options.length > 0) {
+      const _0x5f0c4b = Math.floor(
+          Math.random() * _0x41d157.schoolName.options.length
+        ),
+        _0x2de810 = _0x41d157.schoolName.options[_0x5f0c4b].value
+      _0x41d157.schoolName.value = _0x2de810
+      _0x41d157.schoolName.dispatchEvent(new Event('change', { bubbles: true }))
+    }
+    _0x41d157.schoolName.value &&
+      ((_0x41d157.studentName.value = _0x3abf9f(_0x41d157.schoolName.value)),
+      _0x41d157.studentName.dispatchEvent(
+        new Event('input', { bubbles: true })
+      ))
+    const _0x2e2e9d = Math.floor(Math.random() * 900000000) + 100000000
+    _0x41d157.studentId.value = _0x2e2e9d
+    _0x41d157.studentId.dispatchEvent(new Event('input', { bubbles: true }))
+    const _0x3acfdf = new Date(),
+      _0x563026 = _0x3acfdf.getFullYear() - Math.floor(Math.random() * 8) - 18,
+      _0x3e7a59 = Math.floor(Math.random() * 12) + 1
+    const _0x5d430f = Math.floor(Math.random() * 28) + 1
+    const _0x9cfd05 = new Date(_0x563026, _0x3e7a59 - 1, _0x5d430f)
+    _0x41d157.dob.value = _0x9cfd05.toISOString().split('T')[0]
+    _0x41d157.dob.dispatchEvent(new Event('change', { bubbles: true }))
+    _0x41d157.course.options.length > 0 &&
+      (_0x41d157.course.selectedIndex = Math.floor(
+        Math.random() * _0x41d157.course.options.length
+      ))
+    const _0xf6a435 = new Date('2029-01-01'),
+      _0x433836 = new Date('2033-12-30'),
+      _0x36bcc8 =
+        _0xf6a435.getTime() +
+        Math.random() * (_0x433836.getTime() - _0xf6a435.getTime())
+    _0x41d157.validTo.value = new Date(_0x36bcc8).toISOString().split('T')[0]
+    _0x41d157.validTo.dispatchEvent(new Event('change', { bubbles: true }))
+    _0x4e833d = _0x46e1e4()
+    setTimeout(() => {
+      _0x1979a1()
+      _0x2db35d()
+        .then(() => {
+          _0x272ccb()
+          setTimeout(() => {
+            _0x273666()
+          }, 300)
+        })
+        .catch((_0x5bc042) => {
+          _0x33ecaf.src =
+            'https://placehold.co/400x400/E2E8F0/A0AEC0?text=Loading...'
+        })
+    }, 300)
+    setTimeout(() => {
+      _0x54ede8.preloadFaces()
+    }, 100)
+    setTimeout(() => {
+      _0x54ede8.preloadedImages.length < _0x54ede8.maxCacheSize &&
+        _0x54ede8.preloadFaces()
+    }, 2000)
+  }
+  const _0x183fd5 = new IntersectionObserver(
+    (_0x32c0de) => {
+      _0x32c0de.forEach((_0x239caa) => {
+        if (_0x239caa.isIntersecting && !_0x21c38f) {
+          _0x47a5b3()
+        }
+      })
+    },
+    { threshold: 0.1 }
+  )
+  _0x183fd5.observe(_0x2a10cc)
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden && !_0x21c38f) {
+      setTimeout(_0x47a5b3, 100)
+    }
+  })
+  window.addEventListener('beforeunload', () => {
+    _0x54ede8.cleanup()
+    _0x183fd5.disconnect()
+  })
+  _0x456a1f()
+  function _0x4ea009() {
+    const _0x54c372 = document.querySelectorAll('button')
+    _0x54c372.forEach((_0x2abadb, _0x411072) => {
+      _0x2abadb.addEventListener('mouseenter', () => {
+        _0x2abadb.style.transform = 'translateY(-3px) scale(1.02)'
+        _0x2abadb.style.boxShadow = '0 10px 25px rgba(0,0,0,0.15)'
+      })
+      _0x2abadb.addEventListener('mouseleave', () => {
+        _0x2abadb.style.transform = 'translateY(0) scale(1)'
+        _0x2abadb.style.boxShadow = ''
+      })
+    })
+    _0x54c372.forEach((_0x1fca83) => {
+      _0x1fca83.addEventListener('click', function (_0x1fb54f) {
+        const _0x3b65c5 = document.createElement('span'),
+          _0xebfe51 = this.getBoundingClientRect(),
+          _0x47092b = Math.max(_0xebfe51.width, _0xebfe51.height),
+          _0x17f210 = _0x1fb54f.clientX - _0xebfe51.left - _0x47092b / 2,
+          _0x4d14fb = _0x1fb54f.clientY - _0xebfe51.top - _0x47092b / 2
+        _0x3b65c5.style.width = _0x3b65c5.style.height = _0x47092b + 'px'
+        _0x3b65c5.style.left = _0x17f210 + 'px'
+        _0x3b65c5.style.top = _0x4d14fb + 'px'
+        _0x3b65c5.style.position = 'absolute'
+        _0x3b65c5.style.borderRadius = '50%'
+        _0x3b65c5.style.background = 'rgba(255,255,255,0.6)'
+        _0x3b65c5.style.transform = 'scale(0)'
+        _0x3b65c5.style.animation = 'ripple 0.6s ease-out'
+        _0x3b65c5.style.pointerEvents = 'none'
+        this.style.position = 'relative'
+        this.style.overflow = 'hidden'
+        this.appendChild(_0x3b65c5)
+        setTimeout(() => {
+          _0x3b65c5.remove()
+        }, 600)
+      })
+    })
+  }
+  if (!document.querySelector('#ripple-styles')) {
+    const _0x4b98f5 = document.createElement('style')
+    _0x4b98f5.id = 'ripple-styles'
+    _0x4b98f5.textContent =
+      '\n            @keyframes ripple {\n                to {\n                    transform: scale(2);\n                    opacity: 0;\n                }\n            }\n            \n            @keyframes download-bounce {\n                0%, 100% {\n                    transform: translateY(0);\n                }\n                25% {\n                    transform: translateY(-8px);\n                }\n                50% {\n                    transform: translateY(0);\n                }\n                75% {\n                    transform: translateY(-4px);\n                }\n            }\n        '
+    document.head.appendChild(_0x4b98f5)
+  }
+  setTimeout(_0x4ea009, 100)
+})
+const mutationObserver = new MutationObserver((_0x338595) => {
+    _0x338595.forEach((_0x5c3d87) => {
+      if (
+        _0x5c3d87.type === 'attributes' &&
+        (_0x5c3d87.attributeName === 'style' ||
+          _0x5c3d87.attributeName === 'class')
+      ) {
+        if (!isResizing) {
+          setTimeout(setCanvasSize, 50)
+        }
+      }
+    })
+  }),
+  cardCanvasEl = document.getElementById('card-canvas')
+if (cardCanvasEl) {
+  mutationObserver.observe(cardCanvasEl, {
+    attributes: true,
+    attributeFilter: ['style', 'class'],
+  })
+}
