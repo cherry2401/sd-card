@@ -2933,9 +2933,69 @@ document.addEventListener('DOMContentLoaded', () => {
   })()
   _0x41d157.studentPhoto.addEventListener('change', (_0x493c16) => {
     if (_0x493c16.target.files && _0x493c16.target.files[0]) {
-      _0x33ecaf.src = URL.createObjectURL(_0x493c16.target.files[0])
+      const file = _0x493c16.target.files[0];
+      // Kiểm tra định dạng file
+      if (file.type.startsWith('image/')) {
+        const imageUrl = URL.createObjectURL(file);
+        _0x33ecaf.onload = function() {
+          _0x272ccb(); // Vẽ lại thẻ sinh viên
+          // Hiển thị thông báo thành công
+          const notification = document.createElement('div');
+          notification.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+            z-index: 10000;
+            font-family: Inter, sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            animation: slideInRight 0.3s ease-out;
+          `;
+          notification.innerHTML = '✅ Ảnh đã được tải lên thành công';
+          document.body.appendChild(notification);
+          setTimeout(() => {
+            notification.style.animation = 'slideOutRight 0.3s ease-out';
+            setTimeout(() => document.body.removeChild(notification), 300);
+          }, 2000);
+        };
+        _0x33ecaf.src = imageUrl;
+      } else {
+        // Hiển thị thông báo lỗi
+        const errorNotification = document.createElement('div');
+        errorNotification.style.cssText = `
+          position: fixed;
+          top: 20px;
+          right: 20px;
+          background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+          color: white;
+          padding: 12px 20px;
+          border-radius: 8px;
+          box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+          z-index: 10000;
+          font-family: Inter, sans-serif;
+          font-weight: 600;
+          font-size: 14px;
+          animation: slideInRight 0.3s ease-out;
+        `;
+        errorNotification.innerHTML = '❌ Vui lòng chọn file ảnh (JPG, PNG, GIF, etc.)';
+        document.body.appendChild(errorNotification);
+        setTimeout(() => {
+          errorNotification.style.animation = 'slideOutRight 0.3s ease-out';
+          setTimeout(() => document.body.removeChild(errorNotification), 300);
+        }, 3000);
+      }
     }
   })
+
+  const photoUploadArea = document.getElementById('photo-upload-area');
+  photoUploadArea.addEventListener('click', () => {
+    _0x41d157.studentPhoto.click();
+  });
   document.addEventListener('paste', (_0x489876) => {
     const _0x40d7ee = _0x489876.clipboardData.items
     for (let _0x393fe3 = 0; _0x393fe3 < _0x40d7ee.length; _0x393fe3++) {
